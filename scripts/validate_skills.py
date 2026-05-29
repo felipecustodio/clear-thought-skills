@@ -125,8 +125,11 @@ def validate_evals(eval_file: Path, skill_name: str) -> list[str]:  # noqa: C901
             continue
         eval_case = cast("dict[str, object]", case)
         for key in ("id", "prompt", "expected_output"):
-            if key not in eval_case or not str(eval_case[key]).strip():
-                errors.append(f"{prefix}.{key} must be present and non-empty")  # noqa: PERF401
+            value = eval_case.get(key)
+            if not isinstance(value, str) or not value.strip():
+                errors.append(
+                    f"{prefix}.{key} must be a non-empty string",
+                )
         files = eval_case.get("files")
         if not isinstance(files, list) or any(
             not isinstance(item, str) or not item for item in files

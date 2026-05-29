@@ -158,7 +158,31 @@ def test_validate_skill_reports_missing_eval_file(tmp_path: Path) -> None:
                     ],
                 },
             ),
-            "must be present and non-empty",
+            "must be a non-empty string",
+        ),
+        (
+            json.dumps(
+                {
+                    "skill_name": "demo-skill",
+                    "evals": [
+                        {
+                            "id": 123,
+                            "prompt": True,
+                            "expected_output": False,
+                            "files": [],
+                            "assertions": ["ok"],
+                        },
+                        {
+                            "id": "edge",
+                            "prompt": "Prompt.",
+                            "expected_output": "Output.",
+                            "files": [],
+                            "assertions": ["ok"],
+                        },
+                    ],
+                },
+            ),
+            "must be a non-empty string",
         ),
         (evals_json(files=[""]), "files must be a list"),
         (evals_json(assertions=[]), "assertions must be a non-empty list"),
