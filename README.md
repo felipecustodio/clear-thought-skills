@@ -1,5 +1,7 @@
 <p align="center">
-  <video src="assets/brain.mp4" width="100%" autoplay muted loop playsinline></video>
+  <a href="assets/brain.mp4">
+    <img src="assets/brain.png" width="100%" alt="Clear Thought brain banner">
+  </a>
 </p>
 
 # clear-thought-skills
