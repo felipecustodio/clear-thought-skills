@@ -6,6 +6,8 @@
 
 ◇ Clear Thought MCP, recast as Agent Skills.
 
+Based on the original [Clear Thought 1.5 MCP Server](https://github.com/waldzellai/clearthought-onepointfive#) by Waldzell AI.
+
 ## § Aim
 
 Convert Clear Thought reasoning tools into:
@@ -47,3 +49,7 @@ just validate-skills
 ◦ planning complete  
 ◦ tooling scaffolded  
 ◦ skill migration next
+
+## § Credit
+
+Original implementation: [waldzellai/clearthought-onepointfive](https://github.com/waldzellai/clearthought-onepointfive#).
