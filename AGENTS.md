@@ -34,3 +34,20 @@ GitHub CI must pass for PRs before merge. Required CI gates: lockfile, lint, typ
 
 Use conventional commits.
 Keep commit messages concise.
+
+Use conventional branch names:
+- `feat/<short-description>` for features.
+- `fix/<short-description>` for bug fixes.
+- `docs/<short-description>` for documentation.
+- `test/<short-description>` for tests.
+- `ci/<short-description>` for CI-only work.
+- `chore/<short-description>` for maintenance.
+
+PR title format: `<type>: <concise summary>`.
+
+PR body format:
+- `## Summary` with 2-5 bullets.
+- `## Validation` with commands run and results.
+- `## Notes` only when useful.
+- Keep wording concise.
+- Use Mermaid diagrams when they clarify flow, architecture, or dependency relationships.
