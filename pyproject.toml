@@ -1,0 +1,40 @@
+[project]
+name = "clear-thought-skills"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "prek>=0.2",
+  "pytest>=8",
+  "pytest-cov>=6",
+  "pytest-randomly>=3",
+  "pytest-timeout>=2",
+  "pytest-xdist>=3",
+  "ruff>=0.8",
+  "ty>=0.0.1a",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["COM812", "D"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]
+
+[tool.pytest.ini_options]
+addopts = """
+  -n auto
+  --cov=scripts
+  --cov-report=term-missing
+  --cov-report=xml
+  --cov-fail-under=95
+  --strict-config
+  --strict-markers
+"""
+testpaths = ["tests"]
