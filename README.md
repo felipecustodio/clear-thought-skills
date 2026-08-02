@@ -87,13 +87,6 @@ just validate-skills
 | [visual-dashboard](skills/visual-dashboard/SKILL.md) | Generates interactive HTML/CSS/JS dashboards and metrics panels for complex data visualization. | **Data Reporting**: Displaying multi-metric performance reports or telemetry data.; **Executive Summaries**: Creating visually engaging dashboard UI artifacts. |
 | [visual-reasoning](skills/visual-reasoning/SKILL.md) | Uses visual diagrams (Mermaid, ASCII, UI mockups) to model spatial, architectural, and flow relationships. | **Architecture Documentation**: Drawing flowcharts, sequence diagrams, or component diagrams.; **Workflow Visualization**: Clarifying complex state machines or process branches. |
 
-## § Status
-
-◦ planning complete  
-◦ tooling scaffolded  
-◦ skill migration complete  
-◦ notebook operations excluded as per spec
-
 ## § Credit
 
 - Original Clear Thought implementation: [waldzellai/clearthought-onepointfive](https://github.com/waldzellai/clearthought-onepointfive#).
