@@ -80,6 +80,58 @@ just validate-skills
 | [visual-dashboard](skills/visual-dashboard/SKILL.md) | Generates interactive HTML/CSS/JS dashboards and metrics panels for complex data visualization. | **Data Reporting**: Displaying multi-metric performance reports or telemetry data.; **Executive Summaries**: Creating visually engaging dashboard UI artifacts. |
 | [visual-reasoning](skills/visual-reasoning/SKILL.md) | Uses visual diagrams (Mermaid, ASCII, UI mockups) to model spatial, architectural, and flow relationships. | **Architecture Documentation**: Drawing flowcharts, sequence diagrams, or component diagrams.; **Workflow Visualization**: Clarifying complex state machines or process branches. |
 
+## § Agentic Workflows & Usage Guide
+
+### 1. Planning Phase Workflows
+
+#### Pattern A: High-Uncertainty Architecture Planning
+```mermaid
+graph LR
+    A[orchestration-suggest] --> B[socratic-method]
+    B --> C[tree-of-thought]
+    C --> D[ulysses-protocol]
+```
+1. **`orchestration-suggest`**: Analyze prompt complexity and recommend reasoning sequence.
+2. **`socratic-method`**: Probe requirements to uncover hidden assumptions and clarify edge constraints.
+3. **`tree-of-thought`**: Explore competing architectural patterns (e.g. Microservices vs Monolith) with heuristic branch scoring.
+4. **`ulysses-protocol`**: Establish strict stopping rules and scope boundaries before writing code.
+
+---
+
+### 2. Development & Debugging Workflows
+
+#### Pattern B: Complex Refactoring & Implementation
+```mermaid
+graph LR
+    A[sequential-thinking] --> B[code-execution-reasoning] --> C[debugging-approach]
+```
+1. **`sequential-thinking`**: Execute step-by-step logic, allowing dynamic thought revisions.
+2. **`code-execution-reasoning`**: Perform mental dry-runs of memory state, loop invariants, and pointer safety.
+3. **`debugging-approach`**: If errors occur, isolate the failure via binary search and root-cause verification.
+
+---
+
+### 3. Review & Red-Teaming Workflows
+
+#### Pattern C: System Hardening & Safety Audit
+```mermaid
+graph LR
+    A[systems-thinking] --> B[pdr-reasoning] --> C[collaborative-reasoning] --> D[visual-reasoning]
+```
+1. **`systems-thinking`**: Map system feedback loops, delays, and bottleneck leverage points.
+2. **`pdr-reasoning`**: Predict failure modes and actively disrupt/red-team the design.
+3. **`collaborative-reasoning`**: Evaluate outcomes across Security, Performance, and Product personas.
+4. **`visual-reasoning`**: Render final architecture and sequence flowcharts using Mermaid diagrams.
+
+---
+
+## § Best Practices for Maximum Effectiveness
+
+- **Skill Chaining**: Pass the output contract of one skill directly into the input context of the next skill.
+- **Context Preservation**: Use `session-export` and `session-import` to serialize cognitive state when handing off tasks between agents or subagent tasks.
+- **Strict Boundary Enforcement**: Combine open-ended skills (like `creative-thinking`) with boundary enforcement skills (`ulysses-protocol`) to avoid endless iteration loops.
+- **Deterministic Verification**: Whenever a skill provides a bundled Python script in `scripts/`, invoke it using `uv run scripts/<script_name>.py` to obtain reproducible JSON outputs.
+
 ## § Status
 
 ◦ planning complete  
