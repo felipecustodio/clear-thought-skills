@@ -34,4 +34,5 @@ Collaborative Reasoning models multi-perspective discussions by simulating speci
 
 ## Scripts
 
-Python support omitted: Agent context window natively coordinates multi-persona reasoning without requiring external deterministic scripts.
+- `scripts/collaborative_reasoning.py` - Deterministic evaluation, state validation, and CLI tool for collaborative-reasoning.
+

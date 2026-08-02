@@ -37,4 +37,5 @@ Code Execution Reasoning performs a rigorous mental dry-run of code line by line
 
 ## Scripts
 
-Python support omitted: Agent context window natively traces code execution without requiring external deterministic scripts.
+- `scripts/code_execution_reasoning.py` - Deterministic evaluation, state validation, and CLI tool for code-execution-reasoning.
+

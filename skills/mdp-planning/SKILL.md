@@ -39,4 +39,5 @@ MDP Planning models environments where outcomes are partly random and partly und
 
 ## Scripts
 
-Python support omitted: Agent context window natively executes MDP planning without requiring external deterministic scripts.
+- `scripts/mdp_planning.py` - Deterministic evaluation, state validation, and CLI tool for mdp-planning.
+

@@ -39,4 +39,5 @@ Causal Analysis moves beyond superficial symptoms to isolate underlying root cau
 
 ## Scripts
 
-Python support omitted: Agent context window natively executes causal analysis without requiring external deterministic scripts.
+- `scripts/causal_analysis.py` - Deterministic evaluation, state validation, and CLI tool for causal-analysis.
+

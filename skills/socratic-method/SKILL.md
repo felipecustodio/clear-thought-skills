@@ -38,4 +38,5 @@ The Socratic Method employs targeted questioning to challenge assumptions, clari
 
 ## Scripts
 
-Python support omitted: Agent context window natively executes Socratic probing without requiring external deterministic scripts.
+- `scripts/socratic_method.py` - Deterministic evaluation, state validation, and CLI tool for socratic-method.
+

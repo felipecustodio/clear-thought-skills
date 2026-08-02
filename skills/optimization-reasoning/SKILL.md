@@ -33,4 +33,5 @@ Optimization Reasoning identifies the mathematically or logically best solution 
 
 ## Scripts
 
-Python support omitted: Agent context window natively formulates optimization problems without requiring external deterministic scripts.
+- `scripts/optimization_reasoning.py` - Deterministic evaluation, state validation, and CLI tool for optimization-reasoning.
+

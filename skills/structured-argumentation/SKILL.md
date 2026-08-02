@@ -35,4 +35,5 @@ Structured Argumentation applies formal argument frameworks (e.g., Toulmin Model
 
 ## Scripts
 
-Python support omitted: Agent context window natively constructs structured arguments without requiring external deterministic scripts.
+- `scripts/structured_argumentation.py` - Deterministic evaluation, state validation, and CLI tool for structured-argumentation.
+

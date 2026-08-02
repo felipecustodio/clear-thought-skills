@@ -31,4 +31,5 @@ Session Import reads a stored JSON session file from disk and restores memory st
 
 ## Scripts
 
-- `scripts/session_import.py` - CLI script for JSON deserialization.
+- `scripts/session_import.py` - Deterministic evaluation, state validation, and CLI tool for session-import.
+

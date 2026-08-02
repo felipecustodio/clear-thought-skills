@@ -45,4 +45,5 @@ The OODA Loop (Observe, Orient, Decide, Act) is an iterative strategy framework 
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks OODA loop cycles without requiring external deterministic scripts.
+- `scripts/ooda_loop.py` - Deterministic evaluation, state validation, and CLI tool for ooda-loop.
+

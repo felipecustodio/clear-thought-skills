@@ -32,4 +32,5 @@ Custom Framework allows the agent to construct a bespoke, tailored reasoning met
 
 ## Scripts
 
-Python support omitted: Agent context window natively constructs custom frameworks without requiring external deterministic scripts.
+- `scripts/custom_framework.py` - Deterministic evaluation, state validation, and CLI tool for custom-framework.
+

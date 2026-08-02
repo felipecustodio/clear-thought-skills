@@ -33,4 +33,5 @@ Ethical Analysis evaluates actions and technical implementations for moral compl
 
 ## Scripts
 
-Python support omitted: Agent context window natively performs ethical evaluations without requiring external deterministic scripts.
+- `scripts/ethical_analysis.py` - Deterministic evaluation, state validation, and CLI tool for ethical-analysis.
+

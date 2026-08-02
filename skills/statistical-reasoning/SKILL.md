@@ -34,4 +34,5 @@ Statistical Reasoning applies mathematical rigor to data interpretation, probabi
 
 ## Scripts
 
-Python support omitted: Agent context window natively performs statistical reasoning without requiring external deterministic scripts.
+- `scripts/statistical_reasoning.py` - Deterministic evaluation, state validation, and CLI tool for statistical-reasoning.
+

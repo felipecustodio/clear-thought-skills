@@ -41,4 +41,5 @@ Creative Thinking applies structured ideation techniques (SCAMPER, Lateral Think
 
 ## Scripts
 
-Python support omitted: Agent context window natively applies creative ideation techniques without requiring external deterministic scripts.
+- `scripts/creative_thinking.py` - Deterministic evaluation, state validation, and CLI tool for creative-thinking.
+

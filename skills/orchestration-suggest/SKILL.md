@@ -32,4 +32,5 @@ Orchestration Suggest acts as a meta-cognitive router, analyzing a user prompt a
 
 ## Scripts
 
-Python support omitted: Agent context window natively executes orchestration routing without requiring external deterministic scripts.
+- `scripts/orchestration_suggest.py` - Deterministic evaluation, state validation, and CLI tool for orchestration-suggest.
+

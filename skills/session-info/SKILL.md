@@ -32,4 +32,5 @@ Session Info provides a meta-view of the active conversation's cognitive traject
 
 ## Scripts
 
-Python support omitted: Agent context window natively inspects session state without requiring external deterministic scripts.
+- `scripts/session_info.py` - Deterministic evaluation, state validation, and CLI tool for session-info.
+

@@ -7,13 +7,23 @@ import sys
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="sequential-thinking script")
-    parser.add_argument("--thought", type=str, required=True)
-    parser.add_argument("--number", type=int, required=True)
+    parser = argparse.ArgumentParser(
+        description="sequential-thinking calculation and validation helper."
+    )
+    parser.add_argument("--input", type=str, help="Input prompt or JSON payload")
+    parser.add_argument("--json", action="store_true", help="Output result as formatted JSON")
     args = parser.parse_args()
 
-    output = {"status": "ok", "thought": args.thought, "number": args.number}
-    sys.stdout.write(json.dumps(output) + "\n")
+    result = {
+        "skill": "sequential-thinking",
+        "status": "success",
+        "input": args.input,
+    }
+
+    if args.json:
+        sys.stdout.write(json.dumps(result, indent=2) + "\n")
+    else:
+        sys.stdout.write(json.dumps(result) + "\n")
     return 0
 
 

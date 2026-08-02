@@ -37,4 +37,5 @@ Systems Thinking treats problems as parts of an overall system rather than isola
 
 ## Scripts
 
-Python support omitted: Agent context window natively executes systems thinking without requiring external deterministic scripts.
+- `scripts/systems_thinking.py` - Deterministic evaluation, state validation, and CLI tool for systems-thinking.
+

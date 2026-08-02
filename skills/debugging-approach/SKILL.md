@@ -34,4 +34,5 @@ Debugging Approach provides a systematic methodology for isolating software bugs
 
 ## Scripts
 
-Python support omitted: Agent context window natively applies debugging methodologies without requiring external deterministic scripts.
+- `scripts/debugging_approach.py` - Deterministic evaluation, state validation, and CLI tool for debugging-approach.
+

@@ -35,4 +35,5 @@ Mental Model applies established cognitive lenses (First Principles, Inversion, 
 
 ## Scripts
 
-Python support omitted: Agent context window natively applies mental models without requiring external deterministic scripts.
+- `scripts/mental_model.py` - Deterministic evaluation, state validation, and CLI tool for mental-model.
+

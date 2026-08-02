@@ -37,4 +37,5 @@ Decision Framework structures complex choices with multiple competing options an
 
 ## Scripts
 
-Python support omitted: Agent context window natively constructs decision matrices without requiring external deterministic scripts.
+- `scripts/decision_framework.py` - Deterministic evaluation, state validation, and CLI tool for decision-framework.
+

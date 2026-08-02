@@ -35,4 +35,5 @@ Research Reasoning organizes literature review and information gathering into a 
 
 ## Scripts
 
-Python support omitted: Agent context window natively executes research synthesis without requiring external deterministic scripts.
+- `scripts/research_reasoning.py` - Deterministic evaluation, state validation, and CLI tool for research-reasoning.
+

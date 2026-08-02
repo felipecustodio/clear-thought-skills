@@ -55,7 +55,7 @@ Always present your sequential thinking clearly using structured blocks:
 
 ## Scripts
 
-- `scripts/sequential_thinking.py` - Optional utility script for validating sequence parameters and exporting structured thought chains.
+- `scripts/sequential_thinking.py` - Deterministic evaluation, state validation, and CLI tool for sequential-thinking.
 
 ## Gotchas
 

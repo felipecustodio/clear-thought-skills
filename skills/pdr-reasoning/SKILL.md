@@ -40,4 +40,5 @@ Predict-Disrupt-Reflect (PDR) is a adversarial reasoning protocol designed to co
 
 ## Scripts
 
-Python support omitted: Agent context window natively executes PDR stress-testing without requiring external deterministic scripts.
+- `scripts/pdr_reasoning.py` - Deterministic evaluation, state validation, and CLI tool for pdr-reasoning.
+

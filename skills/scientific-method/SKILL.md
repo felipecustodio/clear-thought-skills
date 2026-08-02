@@ -36,4 +36,5 @@ The Scientific Method provides a rigorous framework for empirical investigation.
 
 ## Scripts
 
-Python support omitted: Agent context window natively structures scientific inquiry without requiring external deterministic scripts.
+- `scripts/scientific_method.py` - Deterministic evaluation, state validation, and CLI tool for scientific-method.
+

@@ -32,4 +32,5 @@ Visual Dashboard renders rich, interactive HTML dashboards containing metrics pa
 
 ## Scripts
 
-Python support omitted: Agent context window natively constructs HTML/CSS dashboard layouts without requiring external deterministic scripts.
+- `scripts/visual_dashboard.py` - Deterministic evaluation, state validation, and CLI tool for visual-dashboard.
+

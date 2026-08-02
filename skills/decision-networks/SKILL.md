@@ -36,4 +36,5 @@ Decision Networks extend Bayesian networks by incorporating decision nodes and u
 
 ## Scripts
 
-Python support omitted: Agent context window natively models decision networks without requiring external deterministic scripts.
+- `scripts/decision_networks.py` - Deterministic evaluation, state validation, and CLI tool for decision-networks.
+

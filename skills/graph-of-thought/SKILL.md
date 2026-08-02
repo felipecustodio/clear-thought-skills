@@ -45,4 +45,5 @@ Graph of Thought (GoT) extends beyond tree structures by representing thoughts a
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks graph topologies without requiring external deterministic scripts.
+- `scripts/graph_of_thought.py` - Deterministic evaluation, state validation, and CLI tool for graph-of-thought.
+

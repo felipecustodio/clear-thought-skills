@@ -36,4 +36,5 @@ Metacognitive Monitoring is "thinking about thinking." It provides real-time sel
 
 ## Scripts
 
-Python support omitted: Agent context window natively performs metacognitive monitoring without requiring external deterministic scripts.
+- `scripts/metacognitive_monitoring.py` - Deterministic evaluation, state validation, and CLI tool for metacognitive-monitoring.
+

@@ -54,7 +54,7 @@ Tree of Thought (ToT) enables the agent to evaluate multiple distinct reasoning 
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this tree structure and heuristic evaluation without requiring external deterministic scripts.
+- `scripts/tree_of_thought.py` - Deterministic evaluation, state validation, and CLI tool for tree-of-thought.
 
 ## Gotchas
 

@@ -54,7 +54,7 @@ Beam Search is a heuristic search algorithm that explores a graph by expanding t
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks beam width state without requiring external deterministic scripts.
+- `scripts/beam_search.py` - Deterministic evaluation, state validation, and CLI tool for beam-search.
 
 ## Gotchas
 

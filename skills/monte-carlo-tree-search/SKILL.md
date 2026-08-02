@@ -47,7 +47,7 @@ Monte Carlo Tree Search (MCTS) is a heuristic search algorithm for decision-maki
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks MCTS phases without requiring external deterministic scripts.
+- `scripts/monte_carlo_tree_search.py` - Deterministic evaluation, state validation, and CLI tool for monte-carlo-tree-search.
 
 ## Gotchas
 

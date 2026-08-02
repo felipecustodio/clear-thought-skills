@@ -36,4 +36,5 @@ Analogical Reasoning maps structural relationships from a well-understood source
 
 ## Scripts
 
-Python support omitted: Agent context window natively performs analogical mapping without requiring external deterministic scripts.
+- `scripts/analogical_reasoning.py` - Deterministic evaluation, state validation, and CLI tool for analogical-reasoning.
+

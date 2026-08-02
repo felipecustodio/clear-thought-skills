@@ -30,7 +30,7 @@ Session Export serializes the active session context into structured JSON format
 
 ## Scripts
 
-- `scripts/session_export.py` - CLI script for JSON serialization.
+- `scripts/session_export.py` - Deterministic evaluation, state validation, and CLI tool for session-export.
 
 ## Gotchas
 

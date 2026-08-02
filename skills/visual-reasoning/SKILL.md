@@ -31,4 +31,5 @@ graph TD
 
 ## Scripts
 
-Python support omitted: Agent context window natively renders Mermaid and visual diagrams without requiring external deterministic scripts.
+- `scripts/visual_reasoning.py` - Deterministic evaluation, state validation, and CLI tool for visual-reasoning.
+

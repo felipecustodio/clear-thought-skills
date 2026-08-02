@@ -41,4 +41,5 @@ The Ulysses Protocol enforces pre-commitment mechanisms (named after Ulysses tyi
 
 ## Scripts
 
-Python support omitted: Agent context window natively enforces Ulysses constraints without requiring external deterministic scripts.
+- `scripts/ulysses_protocol.py` - Deterministic evaluation, state validation, and CLI tool for ulysses-protocol.
+

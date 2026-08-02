@@ -33,4 +33,5 @@ Simulation Reasoning conducts step-by-step dynamic modeling of complex systems t
 
 ## Scripts
 
-Python support omitted: Agent context window natively models simulation steps without requiring external deterministic scripts.
+- `scripts/simulation_reasoning.py` - Deterministic evaluation, state validation, and CLI tool for simulation-reasoning.
+
