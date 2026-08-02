@@ -515,29 +515,29 @@ Project complete when:
 
 ## Migration Checklist
 
-- [ ] Scaffold Python project with `uv`.
-- [ ] Create `pyproject.toml`.
-- [ ] Generate and commit `uv.lock`.
-- [ ] Add `ruff`, `ty`, `pytest`, `pytest-cov`, `pytest-xdist`, `pytest-randomly`, `pytest-timeout`, and `prek`.
-- [ ] Create `Justfile`.
-- [ ] Add `scripts/validate_skills.py`.
-- [ ] Add `prek` hooks.
+- [x] Scaffold Python project with `uv`.
+- [x] Create `pyproject.toml`.
+- [x] Generate and commit `uv.lock`.
+- [x] Add `ruff`, `ty`, `pytest`, `pytest-cov`, `pytest-xdist`, `pytest-randomly`, `pytest-timeout`, and `prek`.
+- [x] Create `Justfile`.
+- [x] Add `scripts/validate_skills.py`.
+- [x] Add `prek` hooks.
 - [x] Add GitHub CI workflow.
 - [x] Configure required branch protection for CI on `main`.
-- [ ] Create shared package.
-- [ ] Create skill template.
-- [ ] Migrate core skills.
-- [ ] Migrate pattern skills.
-- [ ] Migrate collaborative skills.
-- [ ] Migrate analysis skills.
-- [ ] Migrate metagame skills.
-- [ ] Implement session skills with explicit local JSON import/export.
+- [x] Create shared package.
+- [x] Create skill template.
+- [x] Migrate core skills.
+- [x] Migrate pattern skills.
+- [x] Migrate collaborative skills.
+- [x] Migrate analysis skills.
+- [x] Migrate metagame skills.
+- [x] Implement session skills with explicit local JSON import/export.
 - [x] Document notebook exclusion in README.
-- [ ] Add evals.
-- [ ] Add high-coverage tests for skills, scripts, shared helpers, and behaviors.
-- [ ] Validate skill metadata and eval schemas.
+- [x] Add evals.
+- [x] Add high-coverage tests for skills, scripts, shared helpers, and behaviors.
+- [x] Validate skill metadata and eval schemas.
 - [x] Run `skills-ref validate` for every skill.
-- [ ] Make `just check` pass.
+- [x] Make `just check` pass.
 - [x] Update README.
 
 ## Out Of Scope
