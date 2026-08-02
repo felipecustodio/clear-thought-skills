@@ -72,6 +72,7 @@ just validate-skills
 | [session-info](skills/session-info/SKILL.md) | Summarizes the current agent session metadata, active reasoning state, thought counts, and historical trajectory. | **Progress Summarization**: Reporting session state during long-running tasks.; **Context Audit**: Verifying remaining thought budget or session parameters. |
 | [simulation-reasoning](skills/simulation-reasoning/SKILL.md) | Simulates complex system behaviors over time under varying initial conditions or agent interactions. | **Complex Dynamic Systems**: Queueing systems, load behavior under traffic bursts, concurrency race conditions.; **Scenario Planning**: Simulating multi-agent market conditions, adoption curves, or failure cascades. |
 | [socratic-method](skills/socratic-method/SKILL.md) | Uses disciplined, probing questions to uncover underlying assumptions, test reasoning logic, and guide conceptual understanding. | **Clarifying Requirements**: Uncovering hidden assumptions or ambiguous requests from users.; **Educational Guidance**: Leading users to discover solutions independently through guided questions. |
+| [socratic-teaching-scaffolds](skills/socratic-teaching-scaffolds/SKILL.md) | Guides learners to discover knowledge through strategic Socratic questioning and progressive scaffolding removal. Combines question ladders, misconception detectors, Feynman explanations, and worked-example fading. | **Teaching & Mentoring**: Onboarding team members, mentoring problem-solving, or teaching complex technical concepts.; **Correcting Misconceptions**: Identifying and eliminating faulty mental models through contradiction and discovery. |
 | [starter-architecture-design](skills/starter-architecture-design/SKILL.md) | Starter skill for end-to-end software architecture design. Orchestrates requirement probing, systems analysis, tree-of-thought exploration, boundary setting, and visual diagramming. | General reasoning and problem solving. |
 | [starter-code-debugging](skills/starter-code-debugging/SKILL.md) | Starter skill for systematic software debugging and bug resolution. Orchestrates error isolation, code dry-runs, sequential thinking, and regression prevention. | General reasoning and problem solving. |
 | [starter-implement](skills/starter-implement/SKILL.md) | Fundamental Execution Phase starter skill. Restores stored plan state and orchestrates step-by-step implementation, code dry-runs, metacognitive self-correction, and debugging. | General reasoning and problem solving. |
@@ -95,4 +96,5 @@ just validate-skills
 
 ## § Credit
 
-Original implementation: [waldzellai/clearthought-onepointfive](https://github.com/waldzellai/clearthought-onepointfive#).
+- Original Clear Thought implementation: [waldzellai/clearthought-onepointfive](https://github.com/waldzellai/clearthought-onepointfive#).
+- Socratic Teaching Scaffolds skill: [lyndonkl/claude](https://github.com/lyndonkl/claude/blob/main/skills/socratic-teaching-scaffolds/SKILL.md).

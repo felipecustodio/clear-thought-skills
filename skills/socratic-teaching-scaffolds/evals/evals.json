@@ -1,0 +1,25 @@
+{
+  "skill_name": "socratic-teaching-scaffolds",
+  "evals": [
+    {
+      "id": "eval-1",
+      "prompt": "Teach me how recursion works using Socratic questioning.",
+      "expected_output": "A structured Socratic question ladder and Feynman analogy.",
+      "assertions": [
+        "contains_question_ladder",
+        "fades_scaffolding"
+      ],
+      "files": []
+    },
+    {
+      "id": "eval-2",
+      "prompt": "Help me understand memory pointers in C++ without giving me the answer directly.",
+      "expected_output": "Guided discovery questioning revealing pointer misconceptions.",
+      "assertions": [
+        "probes_misconceptions",
+        "validates_transfer"
+      ],
+      "files": []
+    }
+  ]
+}
