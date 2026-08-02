@@ -1,9 +1,6 @@
 # clear-thought-skills
 
-[![CI](https://github.com/felipecustodio/clear-thought-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/felipecustodio/clear-thought-skills/actions/workflows/ci.yml)
-[![Skills](https://img.shields.io/badge/skills-42-blue.svg)](skills/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![Skill Validation](https://img.shields.io/github/actions/workflow/status/felipecustodio/clear-thought-skills/ci.yml?branch=main&label=skill%20validation)](https://github.com/felipecustodio/clear-thought-skills/actions/workflows/ci.yml)
 
 > Clear Thought MCP, rewritten as modular Agent Skills.
 
