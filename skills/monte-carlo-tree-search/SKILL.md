@@ -23,7 +23,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Scripts
 
-- `scripts/monte_carlo_tree_search.py` - required for selection/rollout/backprop helpers
+Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
 
 ## Gotchas
 

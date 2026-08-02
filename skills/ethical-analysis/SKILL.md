@@ -23,7 +23,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Scripts
 
-- `scripts/ethical_analysis.py` - stakeholder matrix formatter
+Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
 
 ## Gotchas
 

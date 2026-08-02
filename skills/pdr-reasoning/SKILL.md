@@ -23,7 +23,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Scripts
 
-- `scripts/pdr_reasoning.py` - required PDR graph algorithms
+Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
 
 ## Gotchas
 

@@ -23,7 +23,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Scripts
 
-- `scripts/decision_networks.py` - required for expected utility computation
+Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
 
 ## Gotchas
 

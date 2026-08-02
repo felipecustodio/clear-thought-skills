@@ -23,7 +23,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Scripts
 
-- `scripts/statistical_reasoning.py` - required for summary/Bayes/test/Monte Carlo math
+Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
 
 ## Gotchas
 

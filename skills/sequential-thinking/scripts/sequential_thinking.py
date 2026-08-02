@@ -1,7 +1,6 @@
 # /// script
 # dependencies = []
 # ///
-
 import argparse
 import json
 import sys
@@ -9,8 +8,12 @@ import sys
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="sequential-thinking script")
-    parser.parse_args()
-    sys.stdout.write(json.dumps({"status": "ok"}) + "\n")
+    parser.add_argument("--thought", type=str, required=True)
+    parser.add_argument("--number", type=int, required=True)
+    args = parser.parse_args()
+
+    output = {"status": "ok", "thought": args.thought, "number": args.number}
+    sys.stdout.write(json.dumps(output) + "\n")
     return 0
 
 
