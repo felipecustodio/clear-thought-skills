@@ -10,7 +10,23 @@ This repository converts the reasoning engines from [Waldzell AI's Clear Thought
 
 ## Installation
 
-Install all skills into your agent environment using `npx skills`:
+### Via GitHub CLI (`gh skill`)
+
+Install all skills using the GitHub CLI:
+
+```bash
+gh skill install felipecustodio/clear-thought-skills
+```
+
+To pin to a specific release (e.g. `v1.1.0`):
+
+```bash
+gh skill install felipecustodio/clear-thought-skills --pin v1.1.0
+```
+
+### Via `npx skills`
+
+Install all skills into your agent environment:
 
 ```bash
 npx skills add felipecustodio/clear-thought-skills
