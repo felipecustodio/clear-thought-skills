@@ -7,7 +7,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Overview & Purpose
 
-starter-code-debugging acts as an automated starter orchestration pipeline. It chains together the ideal combination of reasoning skills for high-level tasks, ensuring structured execution without manual skill routing.
+starter-code-debugging is a starter workflow that chains skills together. It chains together the ideal combination of reasoning skills for high-level tasks, without needing manual setup.
 
 ## Execution Workflow
 

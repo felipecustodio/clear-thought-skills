@@ -1,13 +1,13 @@
 ---
 name: debugging-approach
-description: Applies root-cause isolation, binary search debugging, error trace analysis, and systematic troubleshooting methodologies.
+description: Applies root-cause isolation, binary search debugging, error trace analysis, and systematic troubleshooting methods.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
 ## Overview & Purpose
 
-Debugging Approach provides a systematic methodology for isolating software bugs, performance bottlenecks, and hardware/network errors without reliance on guess-and-check.
+Debugging Approach is a systematic method for isolating software bugs, performance bottlenecks, and hardware/network errors without reliance on guess-and-check.
 
 ## When to Use
 
@@ -17,7 +17,7 @@ Debugging Approach provides a systematic methodology for isolating software bugs
 ## Execution Workflow
 
 1. **Reproduce & Isolate**: Establish minimal reproducible example.
-2. **Formulate Hypotheses**: List potential failure points based on error signature.
+2. **create Hypotheses**: List potential failure points based on error signature.
 3. **Binary Search Isolation**: Divide search space in half (e.g., git bisect, narrowing down line numbers or components).
 4. **Inspect State**: Verify actual vs expected values at boundaries.
 5. **Fix & Verify**: Apply minimal necessary fix and verify no regressions.

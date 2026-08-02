@@ -25,7 +25,7 @@ The OODA Loop (Observe, Orient, Decide, Act) is an iterative strategy framework 
    - Update your internal situational model. Identify biases or outdated assumptions.
 
 3. **Decide**:
-   - Formulate a clear hypothesis or select the single best immediate action from available alternatives.
+   - create a clear hypothesis or select the single best immediate action from available alternatives.
 
 4. **Act**:
    - Execute the action rapidly to test the hypothesis or stabilize the environment.

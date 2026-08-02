@@ -19,7 +19,7 @@ Ethical Analysis evaluates actions and technical implementations for moral compl
 1. **Utilitarian Assessment**: Evaluate consequences — which action maximizes net benefit for the greatest number?
 2. **Deontological Assessment**: Evaluate duties & rules — does the action violate core moral rules, consent, or laws regardless of outcome?
 3. **Rights & Fairness Assessment**: Does the decision treat individuals equitably and respect fundamental rights?
-4. **Synthesis & Mitigation**: Formulate a resolution balancing ethical duties and maximizing positive outcomes.
+4. **Synthesis & Mitigation**: create a resolution balancing ethical duties and maximizing positive outcomes.
 
 ## Expected Output Contract
 

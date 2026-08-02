@@ -1,6 +1,6 @@
 ---
 name: optimization-reasoning
-description: Formulates problems as mathematical or logical optimization models with explicit objective functions and constraints.
+description: creates problems as mathematical or logical optimization models with explicit objective functions and constraints.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
@@ -17,8 +17,8 @@ Optimization Reasoning identifies the mathematically or logically best solution 
 ## Execution Workflow
 
 1. **Identify Decision Variables**: Define the tunable variables ($x_1, x_2, \dots, x_n$).
-2. **Formulate Objective Function**: State the goal explicitly (e.g., $\max f(x)$ or $\min g(x)$).
-3. **Define Hard Constraints**: List non-negotiable boundaries (e.g., $h_i(x) \le C$).
+2. **create Objective Function**: State the goal explicitly (e.g., $\max f(x)$ or $\min g(x)$).
+3. **Define Hard Constraints**: List strict boundaries (e.g., $h_i(x) \le C$).
 4. **Evaluate Feasible Region**: Find the optimal combination of variables satisfying all constraints.
 
 ## Expected Output Contract

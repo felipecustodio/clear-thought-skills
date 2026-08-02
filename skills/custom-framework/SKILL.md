@@ -7,7 +7,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Overview & Purpose
 
-Custom Framework allows the agent to construct a bespoke, tailored reasoning methodology for domain-specific problems that do not fit standard off-the-shelf mental models.
+Custom Framework allows the agent to construct a bespoke, tailored reasoning method for domain-specific problems that do not fit standard off-the-shelf mental models.
 
 ## When to Use
 
@@ -19,7 +19,7 @@ Custom Framework allows the agent to construct a bespoke, tailored reasoning met
 1. **Identify Custom Dimensions**: List unique factors requiring systematic evaluation.
 2. **Define Custom Phases**: Construct 3-5 bespoke evaluation phases.
 3. **Execute Tailored Workflow**: Walk through each phase sequentially.
-4. **Document Methodology**: State the custom framework rules clearly alongside results.
+4. **Document method**: State the custom framework rules clearly alongside results.
 
 ## Expected Output Contract
 

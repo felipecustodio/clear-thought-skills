@@ -7,7 +7,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Overview & Purpose
 
-Collaborative Reasoning models multi-perspective discussions by simulating specialized domain experts (e.g. Security Specialist, Performance Engineer, UX Designer) to evaluate solutions holistically.
+Collaborative Reasoning models multi-perspective discussions by simulating specialized domain experts (e.g. Security Specialist, Performance Engineer, UX Designer) to evaluate solutions fully.
 
 ## When to Use
 

@@ -17,7 +17,7 @@ The Socratic Method employs targeted questioning to challenge assumptions, clari
 ## Execution Workflow
 
 1. **Identify Premise**: State the user's initial assertion or assumption.
-2. **Formulate Probing Questions**:
+2. **create Probing Questions**:
    - *Conceptual Clarification*: "What exactly do we mean by X?"
    - *Probing Assumptions*: "What are we assuming here?"
    - *Probing Evidence*: "What evidence supports this?"

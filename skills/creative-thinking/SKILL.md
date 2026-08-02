@@ -1,6 +1,6 @@
 ---
 name: creative-thinking
-description: Facilitates lateral thinking, SCAMPER technique, random word association, and out-of-the-box ideation.
+description: helps lateral thinking, SCAMPER technique, random word association, and out-of-the-box ideation.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---

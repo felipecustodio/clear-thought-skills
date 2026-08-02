@@ -7,7 +7,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Overview & Purpose
 
-Sequential Thinking provides a structured, linear-to-branching cognitive framework for complex problem solving. It allows the AI agent to explicitly trace its internal reasoning steps, evaluate intermediate conclusions, adjust assumptions on the fly, and dynamically branch or revise previous thoughts when new evidence or edge cases emerge.
+Sequential Thinking is a step-by-step method for complex problem solving. It allows the AI agent to explicitly trace its internal reasoning steps, evaluate intermediate conclusions, adjust assumptions on the fly, and dynamically branch or revise previous thoughts when new evidence or edge cases emerge.
 
 ## When to Use
 

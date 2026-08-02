@@ -7,7 +7,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Overview & Purpose
 
-The Scientific Method provides a rigorous framework for empirical investigation. It transforms speculative problem solving into structured hypothesis testing, ensuring that conclusions are grounded in verifiable evidence and reproducible reasoning.
+The Scientific Method is a step-by-step method for empirical investigation. It transforms speculative problem solving into structured hypothesis testing, ensuring that conclusions are grounded in verifiable evidence and reproducible reasoning.
 
 ## When to Use
 
@@ -18,7 +18,7 @@ The Scientific Method provides a rigorous framework for empirical investigation.
 ## Execution Workflow
 
 1. **Observation**: Record objective facts, error logs, or anomalous behavior without bias.
-2. **Hypothesis**: Formulate testable, falsifiable hypotheses explaining the observation.
+2. **Hypothesis**: create testable, falsifiable hypotheses explaining the observation.
 3. **Experiment Setup**: Design a controlled test to prove or disprove the primary hypothesis.
 4. **Data Collection & Analysis**: Execute the experiment, measure results, and compare against expectations.
 5. **Conclusion**: Accept, modify, or reject the hypothesis based strictly on evidence.

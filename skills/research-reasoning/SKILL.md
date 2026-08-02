@@ -7,7 +7,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Overview & Purpose
 
-Research Reasoning organizes literature review and information gathering into a structured synthesis, evaluating source credibility, methodology soundness, and evidence strength.
+Research Reasoning organizes literature review and information gathering into a structured synthesis, evaluating source credibility, method soundness, and evidence strength.
 
 ## When to Use
 
@@ -18,7 +18,7 @@ Research Reasoning organizes literature review and information gathering into a 
 
 1. **Define Research Query**: State explicit research questions.
 2. **Source Gathering & Categorization**: Collect primary sources, documentation, or empirical studies.
-3. **Evidence Evaluation**: Grade sources by peer-review status, recency, sample size, and methodology.
+3. **Evidence Evaluation**: Grade sources by peer-review status, recency, sample size, and method.
 4. **Synthesis & Triangulation**: Combine findings across multiple independent sources.
 5. **Identify Gaps**: Highlight unresolved questions or conflicting evidence.
 

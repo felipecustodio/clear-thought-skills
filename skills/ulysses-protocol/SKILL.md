@@ -18,7 +18,7 @@ The Ulysses Protocol enforces pre-commitment mechanisms (named after Ulysses tyi
 ## Execution Workflow
 
 1. **Define Hard Constraints (The Lock)**:
-   - Establish non-negotiable boundaries before starting (e.g., "Max 3 iterations", "No refactoring outside target file", "Must complete within 100 lines").
+   - Establish strict boundaries before starting (e.g., "Max 3 iterations", "No refactoring outside target file", "Must complete within 100 lines").
 
 2. **Identify Trigger Conditions (The Sirens)**:
    - List potential distractions or temptations that could cause scope creep during execution.

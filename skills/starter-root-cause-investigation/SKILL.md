@@ -7,12 +7,12 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Overview & Purpose
 
-starter-root-cause-investigation acts as an automated starter orchestration pipeline. It chains together the ideal combination of reasoning skills for high-level tasks, ensuring structured execution without manual skill routing.
+starter-root-cause-investigation is a starter workflow that chains skills together. It chains together the ideal combination of reasoning skills for high-level tasks, without needing manual setup.
 
 ## Execution Workflow
 
 1. **Execute 5-Whys Traversal (`causal-analysis`)**: Map symptoms back to fundamental root causes using counterfactual testing.
-2. **Empirical Hypothesis Testing (`scientific-method`)**: Formulate falsifiable hypotheses, design experiments, and record findings.
+2. **Empirical Hypothesis Testing (`scientific-method`)**: create falsifiable hypotheses, design experiments, and record findings.
 3. **Simulate Dynamic Behavior (`simulation-reasoning`)**: Model system behavior over time under seed conditions to observe emergent failures.
 4. **Self-Audit Reasoning (`metacognitive-monitoring`)**: Perform real-time bias detection to ensure conclusions are grounded strictly in evidence.
 

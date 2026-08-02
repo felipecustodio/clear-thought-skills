@@ -7,7 +7,7 @@ compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 
 ## Overview & Purpose
 
-starter-implement acts as an automated starter orchestration skill for the primary agent loop: IMPLEMENT. It ensures disciplined execution of reasoning frameworks throughout this critical phase.
+starter-implement is a starter workflow for for the primary agent loop: IMPLEMENT. It ensures disciplined execution of reasoning frameworks throughout this critical phase.
 
 ## Execution Workflow
 

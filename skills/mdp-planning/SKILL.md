@@ -1,6 +1,6 @@
 ---
 name: mdp-planning
-description: Formulates sequential decision-making problems as Markov Decision Processes (MDPs) with states, actions, transition probabilities, and rewards.
+description: creates sequential decision-making problems as Markov Decision Processes (MDPs) with states, actions, transition probabilities, and rewards.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
