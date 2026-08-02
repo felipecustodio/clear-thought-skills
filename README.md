@@ -1,48 +1,70 @@
 # clear-thought-skills
 
-◇ Clear Thought MCP, recast as Agent Skills.
+> Clear Thought MCP, rewritten as modular Agent Skills.
 
-Based on the original [Clear Thought 1.5 MCP Server](https://github.com/waldzellai/clearthought-onepointfive#) by Waldzell AI.
+This repository converts the reasoning engines from [Waldzell AI's Clear Thought 1.5 MCP Server](https://github.com/waldzellai/clearthought-onepointfive) into clean, standalone Agent Skills following the [agentskills.io](https://agentskills.io) specification.
 
-## § Aim
+---
 
-Convert Clear Thought reasoning tools into:
+## Aim
 
-• focused `SKILL.md` instructions  
-• minimal Python scripts  
-• deterministic validation  
-• high-coverage tests
+To turn monolithic Model Context Protocol (MCP) servers into lightweight, composable Agent Skills:
 
-## § Shape
+- **Self-contained instructions**: Each skill has a focused `SKILL.md` detailing when to use it, step-by-step workflows, and expected outputs.
+- **Self-contained scripts**: Deterministic tasks use standalone Python scripts with inline PEP 723 metadata.
+- **Strict validation**: Every skill passes automated schema tests and type checks before release.
+
+---
+
+## Repository Structure
 
 ```text
-skills/        → Agent Skill directories
-scripts/       → project utilities
-shared/        → reusable Python helpers
-tests/         → behavior and script coverage
-SPEC.md        → migration contract
+skills/        → Individual Agent Skill packages (SKILL.md, evals, scripts)
+scripts/       → Repository validation and maintenance utilities
+shared/        → Scoped Python helper library (shared.clear_thought)
+tests/         → Comprehensive test suite (pytest + xdist)
+SPEC.md        → Migration contract and specification checklist
 ```
 
-## § Rules
+---
 
-• `pyproject.toml` defines packages and tools  
-• `uv.lock` pins the environment  
-• `uv sync` installs dependencies  
-• `just check` gates local changes  
-• `prek` runs hooks  
-• GitHub CI gates merges
+## Development & Testing Rules
 
-## § Commands
+1. `pyproject.toml` lists dependencies and tool configs.
+2. `uv.lock` locks the exact Python environment.
+3. `uv sync` installs the pinned dependencies.
+4. `just check` runs formatting, linting, type checks, unit tests, and skill validations.
+5. `prek` runs pre-commit hooks locally.
+
+### Key Commands
 
 ```bash
-just sync
-just check
-just validate-skills
+just sync            # Install locked environment
+just check           # Run all linters, type checkers, and tests
+just validate-skills # Validate skill directory schemas
 ```
 
-## § Available Skills
+---
 
-| Skill Name | What It Does | Primary Use Cases |
+## Workflows & Usage
+
+### 1. The Core Agent Loops
+
+- **[`starter-plan`](skills/starter-plan/SKILL.md)**: Governs the planning phase. Discovers requirements, maps dependencies, explores alternative strategies, sets scope limits, and red-teams risks.
+- **[`starter-implement`](skills/starter-implement/SKILL.md)**: Governs the execution phase. Imports the verified plan, runs step-by-step logic, performs mental code dry-runs, and fixes bugs.
+
+### 2. Task-Specific Starters
+
+- **[`starter-architecture-design`](skills/starter-architecture-design/SKILL.md)**: Probe requirements → analyze system → compare architectures → lock boundaries → draw Mermaid diagrams.
+- **[`starter-code-debugging`](skills/starter-code-debugging/SKILL.md)**: Isolate errors → dry-run state → refine logic → stress-test fixes.
+- **[`starter-strategic-decision`](skills/starter-strategic-decision/SKILL.md)**: Decision matrix → probability model → ethical audit → multi-persona review.
+- **[`starter-root-cause-investigation`](skills/starter-root-cause-investigation/SKILL.md)**: 5-Whys causal analysis → empirical testing → dynamic simulation → bias audit.
+
+---
+
+## Available Skills (42)
+
+| Skill Name | Description | Primary Use Cases |
 | :--- | :--- | :--- |
 | [analogical-reasoning](skills/analogical-reasoning/SKILL.md) | Transfers insights, principles, and structural patterns from a familiar source domain to an unfamiliar target domain. | **Novel Problem Solving**: Applying proven architecture patterns (e.g., assembly line) to new fields (e.g., software CI/CD pipelines).; **Simplifying Complex Concepts**: Explaining abstract technical systems using intuitive real-world analogs. |
 | [beam-search](skills/beam-search/SKILL.md) | Evaluates multiple solution candidates in parallel, maintaining a fixed beam width of the top-k highest-scoring states at each step. Use for constrained optimization and decoding. | **Constrained Search Spaces**: When looking for an optimal sequence or configuration (e.g., prompt optimization, workflow synthesis, pathfinding).; **Top-K Candidate Tracking**: When maintaining a strict limit on the number of active possibilities at any given step. |
@@ -73,21 +95,23 @@ just validate-skills
 | [simulation-reasoning](skills/simulation-reasoning/SKILL.md) | Simulates complex system behaviors over time under varying initial conditions or agent interactions. | **Complex Dynamic Systems**: Queueing systems, load behavior under traffic bursts, concurrency race conditions.; **Scenario Planning**: Simulating multi-agent market conditions, adoption curves, or failure cascades. |
 | [socratic-method](skills/socratic-method/SKILL.md) | Uses disciplined, probing questions to uncover underlying assumptions, test reasoning logic, and guide conceptual understanding. | **Clarifying Requirements**: Uncovering hidden assumptions or ambiguous requests from users.; **Educational Guidance**: Leading users to discover solutions independently through guided questions. |
 | [socratic-teaching-scaffolds](skills/socratic-teaching-scaffolds/SKILL.md) | Guides learners to discover knowledge through strategic Socratic questioning and progressive scaffolding removal. Combines question ladders, misconception detectors, Feynman explanations, and worked-example fading. | **Teaching & Mentoring**: Onboarding team members, mentoring problem-solving, or teaching complex technical concepts.; **Correcting Misconceptions**: Identifying and eliminating faulty mental models through contradiction and discovery. |
-| [starter-architecture-design](skills/starter-architecture-design/SKILL.md) | Starter skill for end-to-end software architecture design. Orchestrates requirement probing, systems analysis, tree-of-thought exploration, boundary setting, and visual diagramming. | General reasoning and problem solving. |
-| [starter-code-debugging](skills/starter-code-debugging/SKILL.md) | Starter skill for systematic software debugging and bug resolution. Orchestrates error isolation, code dry-runs, sequential thinking, and regression prevention. | General reasoning and problem solving. |
-| [starter-implement](skills/starter-implement/SKILL.md) | Fundamental Execution Phase starter skill. Restores stored plan state and orchestrates step-by-step implementation, code dry-runs, metacognitive self-correction, and debugging. | General reasoning and problem solving. |
-| [starter-plan](skills/starter-plan/SKILL.md) | Fundamental Planning Phase starter skill. Orchestrates goal decomposition, constraint discovery, alternative exploration, scope boundary locks, and risk red-teaming before execution. | General reasoning and problem solving. |
-| [starter-root-cause-investigation](skills/starter-root-cause-investigation/SKILL.md) | Starter skill for incident post-mortems and deep scientific investigations. Orchestrates 5-Whys causal analysis, empirical hypothesis testing, and simulation modeling. | General reasoning and problem solving. |
-| [starter-strategic-decision](skills/starter-strategic-decision/SKILL.md) | Starter skill for multi-criteria strategic decision making, tech stack selection, and vendor evaluation. Orchestrates decision matrices, probability modeling, ethical checks, and panel reviews. | General reasoning and problem solving. |
+| [starter-architecture-design](skills/starter-architecture-design/SKILL.md) | Starter skill for end-to-end software architecture design. Orchestrates requirement probing, systems analysis, tree-of-thought exploration, boundary setting, and visual diagramming. | General problem solving. |
+| [starter-code-debugging](skills/starter-code-debugging/SKILL.md) | Starter skill for systematic software debugging and bug resolution. Orchestrates error isolation, code dry-runs, sequential thinking, and regression prevention. | General problem solving. |
+| [starter-implement](skills/starter-implement/SKILL.md) | Fundamental Execution Phase starter skill. Restores stored plan state and orchestrates step-by-step implementation, code dry-runs, metacognitive self-correction, and debugging. | General problem solving. |
+| [starter-plan](skills/starter-plan/SKILL.md) | Fundamental Planning Phase starter skill. Orchestrates goal decomposition, constraint discovery, alternative exploration, scope boundary locks, and risk red-teaming before execution. | General problem solving. |
+| [starter-root-cause-investigation](skills/starter-root-cause-investigation/SKILL.md) | Starter skill for incident post-mortems and deep scientific investigations. Orchestrates 5-Whys causal analysis, empirical hypothesis testing, and simulation modeling. | General problem solving. |
+| [starter-strategic-decision](skills/starter-strategic-decision/SKILL.md) | Starter skill for multi-criteria strategic decision making, tech stack selection, and vendor evaluation. Orchestrates decision matrices, probability modeling, ethical checks, and panel reviews. | General problem solving. |
 | [statistical-reasoning](skills/statistical-reasoning/SKILL.md) | Applies statistical thinking, probability estimation, confidence intervals, and Bayesian updating to quantitative data. | **Data Interpretation**: Analyzing benchmark results, metric changes, or experiment outcomes.; **Bayesian Inference**: Updating prior beliefs when new quantitative evidence arrives. |
 | [structured-argumentation](skills/structured-argumentation/SKILL.md) | Constructs formal logical arguments using Claim, Data, Warrant, Backing, Counter-argument, and Rebuttal (Toulmin Model). | **RFCs & Technical Proposals**: Pitching new architecture or technology adoption.; **Debate & Position Papers**: Defending strategic technical choices against skepticism. |
-| [systems-thinking](skills/systems-thinking/SKILL.md) | Analyzes complex systems by examining feedback loops, delays, leverage points, and holistic interconnections. | **Complex System Architecture**: Distributed systems, microservices, organizational dynamics.; **Unintended Consequences**: Preventing fixes that create bigger downstream problems. |
+| [systems-thinking](skills/systems-thinking/SKILL.md) | Analyzes complex systems by examining feedback loops, delays, use points, and holistic interconnections. | **Complex System Architecture**: Distributed systems, microservices, organizational dynamics.; **Unintended Consequences**: Preventing fixes that create bigger downstream problems. |
 | [tree-of-thought](skills/tree-of-thought/SKILL.md) | Explores multiple reasoning paths simultaneously using tree search strategies (DFS/BFS). Use when evaluating competing hypotheses, decision trees, or multi-branch exploration scenarios. | **Branching Decision Trees**: Problems with distinct alternative choices (e.g., architectural choices, algorithm selection).; **Exploration & Backtracking**: Complex puzzle solving, strategic planning, or system optimization where early choices lock in downstream constraints. |
 | [ulysses-protocol](skills/ulysses-protocol/SKILL.md) | Applies pre-commitment mechanisms and strict constraint bounds (Ulysses Contracts) to prevent self-sabotage, scope creep, or decision paralysis. | **Preventing Scope Creep**: When a task threatens to expand uncontrollably beyond initial requirements.; **Setting Hard Execution Limits**: Time-boxing, iteration caps, or strict resource limits on open-ended tasks. |
 | [visual-dashboard](skills/visual-dashboard/SKILL.md) | Generates interactive HTML/CSS/JS dashboards and metrics panels for complex data visualization. | **Data Reporting**: Displaying multi-metric performance reports or telemetry data.; **Executive Summaries**: Creating visually engaging dashboard UI artifacts. |
 | [visual-reasoning](skills/visual-reasoning/SKILL.md) | Uses visual diagrams (Mermaid, ASCII, UI mockups) to model spatial, architectural, and flow relationships. | **Architecture Documentation**: Drawing flowcharts, sequence diagrams, or component diagrams.; **Workflow Visualization**: Clarifying complex state machines or process branches. |
 
-## § Credit
+---
 
-- Original Clear Thought implementation: [waldzellai/clearthought-onepointfive](https://github.com/waldzellai/clearthought-onepointfive#).
-- Socratic Teaching Scaffolds skill: [lyndonkl/claude](https://github.com/lyndonkl/claude/blob/main/skills/socratic-teaching-scaffolds/SKILL.md).
+## Credits
+
+- **Original Clear Thought MCP**: [waldzellai/clearthought-onepointfive](https://github.com/waldzellai/clearthought-onepointfive)
+- **Socratic Teaching Scaffolds**: [lyndonkl/claude](https://github.com/lyndonkl/claude/blob/main/skills/socratic-teaching-scaffolds/SKILL.md)
