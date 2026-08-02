@@ -1,0 +1,23 @@
+{
+  "skill_name": "monte-carlo-tree-search",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate monte carlo tree search on a basic scenario.",
+      "expected_output": "A well-structured output for monte-carlo-tree-search.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate monte carlo tree search on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for monte-carlo-tree-search.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "debugging-approach",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate debugging approach on a basic scenario.",
+      "expected_output": "A well-structured output for debugging-approach.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate debugging approach on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for debugging-approach.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

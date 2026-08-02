@@ -1,0 +1,23 @@
+{
+  "skill_name": "causal-analysis",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate causal analysis on a basic scenario.",
+      "expected_output": "A well-structured output for causal-analysis.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate causal analysis on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for causal-analysis.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

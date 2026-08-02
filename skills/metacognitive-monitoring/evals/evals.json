@@ -1,0 +1,23 @@
+{
+  "skill_name": "metacognitive-monitoring",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate metacognitive monitoring on a basic scenario.",
+      "expected_output": "A well-structured output for metacognitive-monitoring.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate metacognitive monitoring on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for metacognitive-monitoring.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

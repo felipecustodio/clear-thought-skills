@@ -1,0 +1,23 @@
+{
+  "skill_name": "decision-networks",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate decision networks on a basic scenario.",
+      "expected_output": "A well-structured output for decision-networks.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate decision networks on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for decision-networks.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "beam-search",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate beam search on a basic scenario.",
+      "expected_output": "A well-structured output for beam-search.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate beam search on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for beam-search.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

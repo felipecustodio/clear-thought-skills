@@ -1,0 +1,23 @@
+{
+  "skill_name": "structured-argumentation",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate structured argumentation on a basic scenario.",
+      "expected_output": "A well-structured output for structured-argumentation.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate structured argumentation on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for structured-argumentation.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "session-info",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate session info on a basic scenario.",
+      "expected_output": "A well-structured output for session-info.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate session info on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for session-info.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

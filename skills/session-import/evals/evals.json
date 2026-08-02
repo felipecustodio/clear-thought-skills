@@ -1,0 +1,23 @@
+{
+  "skill_name": "session-import",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate session import on a basic scenario.",
+      "expected_output": "A well-structured output for session-import.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate session import on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for session-import.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

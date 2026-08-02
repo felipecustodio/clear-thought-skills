@@ -1,0 +1,23 @@
+{
+  "skill_name": "sequential-thinking",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate sequential thinking on a basic scenario.",
+      "expected_output": "A well-structured output for sequential-thinking.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate sequential thinking on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for sequential-thinking.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

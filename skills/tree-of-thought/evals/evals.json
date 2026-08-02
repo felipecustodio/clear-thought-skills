@@ -1,0 +1,23 @@
+{
+  "skill_name": "tree-of-thought",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate tree of thought on a basic scenario.",
+      "expected_output": "A well-structured output for tree-of-thought.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate tree of thought on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for tree-of-thought.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

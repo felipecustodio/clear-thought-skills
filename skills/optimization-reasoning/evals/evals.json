@@ -1,0 +1,23 @@
+{
+  "skill_name": "optimization-reasoning",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate optimization reasoning on a basic scenario.",
+      "expected_output": "A well-structured output for optimization-reasoning.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate optimization reasoning on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for optimization-reasoning.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

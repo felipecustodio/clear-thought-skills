@@ -1,0 +1,23 @@
+{
+  "skill_name": "ooda-loop",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate ooda loop on a basic scenario.",
+      "expected_output": "A well-structured output for ooda-loop.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate ooda loop on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for ooda-loop.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

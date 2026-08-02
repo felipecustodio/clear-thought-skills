@@ -1,0 +1,23 @@
+{
+  "skill_name": "visual-dashboard",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate visual dashboard on a basic scenario.",
+      "expected_output": "A well-structured output for visual-dashboard.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate visual dashboard on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for visual-dashboard.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

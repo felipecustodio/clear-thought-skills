@@ -1,0 +1,23 @@
+{
+  "skill_name": "collaborative-reasoning",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate collaborative reasoning on a basic scenario.",
+      "expected_output": "A well-structured output for collaborative-reasoning.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate collaborative reasoning on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for collaborative-reasoning.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

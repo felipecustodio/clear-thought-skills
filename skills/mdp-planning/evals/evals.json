@@ -1,0 +1,23 @@
+{
+  "skill_name": "mdp-planning",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate mdp planning on a basic scenario.",
+      "expected_output": "A well-structured output for mdp-planning.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate mdp planning on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for mdp-planning.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "session-export",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate session export on a basic scenario.",
+      "expected_output": "A well-structured output for session-export.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate session export on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for session-export.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "orchestration-suggest",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate orchestration suggest on a basic scenario.",
+      "expected_output": "A well-structured output for orchestration-suggest.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate orchestration suggest on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for orchestration-suggest.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

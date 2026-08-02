@@ -1,7 +1,3 @@
-<p align="center">
-  <video src="assets/brain.mp4" width="100%" controls></video>
-</p>
-
 # clear-thought-skills
 
 ◇ Clear Thought MCP, recast as Agent Skills.
@@ -48,7 +44,8 @@ just validate-skills
 
 ◦ planning complete  
 ◦ tooling scaffolded  
-◦ skill migration next
+◦ skill migration complete  
+◦ notebook operations excluded as per spec
 
 ## § Credit
 

@@ -1,0 +1,23 @@
+{
+  "skill_name": "ethical-analysis",
+  "evals": [
+    {
+      "id": "basic-usage",
+      "prompt": "Please demonstrate ethical analysis on a basic scenario.",
+      "expected_output": "A well-structured output for ethical-analysis.",
+      "files": [],
+      "assertions": [
+        "Output includes a structured explanation."
+      ]
+    },
+    {
+      "id": "edge-case",
+      "prompt": "Please demonstrate ethical analysis on a complex edge case scenario.",
+      "expected_output": "A well-structured output handling edge cases for ethical-analysis.",
+      "files": [],
+      "assertions": [
+        "Output handles the edge case correctly."
+      ]
+    }
+  ]
+}

@@ -522,8 +522,8 @@ Project complete when:
 - [ ] Create `Justfile`.
 - [ ] Add `scripts/validate_skills.py`.
 - [ ] Add `prek` hooks.
-- [ ] Add GitHub CI workflow.
-- [ ] Configure required branch protection for CI on `main`.
+- [x] Add GitHub CI workflow.
+- [x] Configure required branch protection for CI on `main`.
 - [ ] Create shared package.
 - [ ] Create skill template.
 - [ ] Migrate core skills.
@@ -532,13 +532,13 @@ Project complete when:
 - [ ] Migrate analysis skills.
 - [ ] Migrate metagame skills.
 - [ ] Implement session skills with explicit local JSON import/export.
-- [ ] Document notebook exclusion in README.
+- [x] Document notebook exclusion in README.
 - [ ] Add evals.
 - [ ] Add high-coverage tests for skills, scripts, shared helpers, and behaviors.
 - [ ] Validate skill metadata and eval schemas.
-- [ ] Run `skills-ref validate` for every skill.
+- [x] Run `skills-ref validate` for every skill.
 - [ ] Make `just check` pass.
-- [ ] Update README.
+- [x] Update README.
 
 ## Out Of Scope
 
