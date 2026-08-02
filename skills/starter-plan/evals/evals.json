@@ -1,0 +1,25 @@
+{
+  "skill_name": "starter-plan",
+  "evals": [
+    {
+      "id": "eval-1",
+      "prompt": "Execute starter-plan for a software feature task.",
+      "expected_output": "A structured plan output with phase artifacts.",
+      "assertions": [
+        "contains_phases",
+        "produces_output_contract"
+      ],
+      "files": []
+    },
+    {
+      "id": "eval-2",
+      "prompt": "Run starter-plan on an edge case requirement.",
+      "expected_output": "A hardened response adhering to boundary limits.",
+      "assertions": [
+        "enforces_boundaries",
+        "validates_execution"
+      ],
+      "files": []
+    }
+  ]
+}

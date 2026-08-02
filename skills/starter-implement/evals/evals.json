@@ -1,0 +1,25 @@
+{
+  "skill_name": "starter-implement",
+  "evals": [
+    {
+      "id": "eval-1",
+      "prompt": "Execute starter-implement for a software feature task.",
+      "expected_output": "A structured implement output with phase artifacts.",
+      "assertions": [
+        "contains_phases",
+        "produces_output_contract"
+      ],
+      "files": []
+    },
+    {
+      "id": "eval-2",
+      "prompt": "Run starter-implement on an edge case requirement.",
+      "expected_output": "A hardened response adhering to boundary limits.",
+      "assertions": [
+        "enforces_boundaries",
+        "validates_execution"
+      ],
+      "files": []
+    }
+  ]
+}
