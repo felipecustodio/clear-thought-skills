@@ -1,30 +1,40 @@
 ---
 name: systems-thinking
-description: Use this skill for systems_thinking.
+description: Analyzes complex systems by examining feedback loops, delays, leverage points, and holistic interconnections.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for systems thinking
-- You need to perform systems_thinking
+Systems Thinking treats problems as parts of an overall system rather than isolated events. It identifies reinforcing and balancing feedback loops, latency delays, and high-leverage intervention points.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/systems_thinking.py` to validate or compute.
-3. Format the final output for the user.
+- **Complex System Architecture**: Distributed systems, microservices, organizational dynamics.
+- **Unintended Consequences**: Preventing fixes that create bigger downstream problems.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **System Boundary Definition**: Identify key components, inputs, and outputs of the system.
+2. **Feedback Loop Mapping**:
+   - **Reinforcing Loops ($R$)**: Exponential growth or compounding effects.
+   - **Balancing Loops ($B$)**: Stabilizing or equilibrium-seeking loops.
+3. **Identify Delays**: Locate time lags between actions and system responses.
+4. **Find High-Leverage Points**: Identify small changes that produce fundamental system improvements.
+
+## Expected Output Contract
+
+```markdown
+### Systems Analysis
+- **System Components**: [Key Entities]
+- **Feedback Loops**:
+  - `Loop 1 (R)`: [Compounding loop description]
+  - `Loop 2 (B)`: [Stabilizing loop description]
+- **System Delays**: [Latency points]
+- **Leverage Point**: [Recommended intervention point]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively executes systems thinking without requiring external deterministic scripts.

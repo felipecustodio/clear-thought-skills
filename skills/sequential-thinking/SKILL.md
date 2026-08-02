@@ -1,30 +1,63 @@
 ---
 name: sequential-thinking
-description: Use this skill for sequential_thinking.
+description: A detailed, step-by-step reasoning process for dynamic, reflective problem-solving. Use when tackling complex, multi-stage problems that require hypothesis revision, thought branching, and continuous re-evaluation.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for sequential thinking
-- You need to perform sequential_thinking
+Sequential Thinking provides a structured, linear-to-branching cognitive framework for complex problem solving. It allows the AI agent to explicitly trace its internal reasoning steps, evaluate intermediate conclusions, adjust assumptions on the fly, and dynamically branch or revise previous thoughts when new evidence or edge cases emerge.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/sequential_thinking.py` to validate or compute.
-3. Format the final output for the user.
+- **Multi-step Problem Solving**: When a request cannot be answered safely or accurately in a single step.
+- **Hypothesis Testing & Refinement**: When initial assumptions might be wrong or need iterative validation.
+- **Uncertainty & Ambiguity**: When working through complex math, algorithm design, architecture planning, or debugging.
+- **Thought Revision**: When you realize a previous line of reasoning contained an error or overlooked a constraint.
 
-## Outputs
+## When NOT to Use
 
-- A formatted response with reasoning and conclusions.
+- Simple factual lookup or straightforward direct questions.
+- Basic code formatting or syntax conversion tasks.
+
+## Execution Workflow
+
+1. **Initialize Step Context**:
+   - Begin with `Thought 1`. Define the scope of the problem and state initial assumptions explicitly.
+   - Outline the total estimated number of steps required, while acknowledging this number can adjust dynamically.
+
+2. **Iterative Progression**:
+   - For each step (`Thought N`):
+     - State the primary objective of this specific thought.
+     - Execute the cognitive analysis, computation, or verification.
+     - Check for flaws, false assumptions, or missing requirements.
+
+3. **Branching & Revisions (As Needed)**:
+   - **Revision**: If Thought N invalidates Thought N-K, explicitly flag a revision: `[Revises Thought N-K]`. State what changed and why.
+   - **Branching**: If multiple viable paths exist (e.g., Solution A vs. Solution B), create a branch context `[Branch ID: X, From Thought: Y]` to explore alternative hypotheses safely.
+
+4. **Verification & Convergence**:
+   - Determine if `nextThoughtNeeded` is true or false.
+   - Once all branches converge or the optimal path is confirmed, summarize the final solution with high confidence.
+
+## Expected Output Contract
+
+Always present your sequential thinking clearly using structured blocks:
+
+```markdown
+### Thought [Number] / [Total Estimated]
+- **Objective**: [What is being evaluated or solved in this step]
+- **Analysis**: [Detailed reasoning process]
+- **Self-Correction / Notes**: [Any identified risks, revisions, or branching context]
+- **Status**: [Continue / Revise / Finalize]
+```
 
 ## Scripts
 
-- `scripts/sequential_thinking.py` - planner and sequence validator
+- `scripts/sequential_thinking.py` - Optional utility script for validating sequence parameters and exporting structured thought chains.
 
 ## Gotchas
 
-- Ensure all required parameters are provided.
+- Do not rush to set `nextThoughtNeeded: false` until all edge cases and edge constraints have been systematically validated.
+- Ensure revision thoughts explicitly state which prior thought number is being revised to maintain a clean context graph.

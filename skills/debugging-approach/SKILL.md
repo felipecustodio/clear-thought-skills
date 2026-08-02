@@ -1,30 +1,37 @@
 ---
 name: debugging-approach
-description: Use this skill for debugging_approach.
+description: Applies root-cause isolation, binary search debugging, error trace analysis, and systematic troubleshooting methodologies.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for debugging approach
-- You need to perform debugging_approach
+Debugging Approach provides a systematic methodology for isolating software bugs, performance bottlenecks, and hardware/network errors without reliance on guess-and-check.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/debugging_approach.py` to validate or compute.
-3. Format the final output for the user.
+- **Software Debugging**: Investigating stack traces, test failures, memory leaks, or unexpected output.
+- **System Troubleshooting**: Diagnosing configuration errors or environment mismatches.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Reproduce & Isolate**: Establish minimal reproducible example.
+2. **Formulate Hypotheses**: List potential failure points based on error signature.
+3. **Binary Search Isolation**: Divide search space in half (e.g., git bisect, narrowing down line numbers or components).
+4. **Inspect State**: Verify actual vs expected values at boundaries.
+5. **Fix & Verify**: Apply minimal necessary fix and verify no regressions.
+
+## Expected Output Contract
+
+```markdown
+### Debugging Report
+- **Error Signature**: [Stack trace / symptom]
+- **Isolation Boundary**: [Component / line identified]
+- **Root Cause**: [Mechanism of failure]
+- **Verification**: [Test confirming fix]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively applies debugging methodologies without requiring external deterministic scripts.

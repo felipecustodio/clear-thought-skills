@@ -1,30 +1,38 @@
 ---
 name: mental-model
-description: Use this skill for mental_model.
+description: Applies first-principles thinking, inversion, Pareto principle, second-order thinking, and mental frameworks to frame problems.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for mental model
-- You need to perform mental_model
+Mental Model applies established cognitive lenses (First Principles, Inversion, Second-Order Thinking, Occam's Razor, Hanlon's Razor) to break through conventional assumptions and frame complex problems clearly.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/mental_model.py` to validate or compute.
-3. Format the final output for the user.
+- **First Principles**: Deconstructing a problem to fundamental truths.
+- **Inversion**: Solving a problem backwards by asking how to guarantee failure.
+- **Second-Order Thinking**: Asking "And then what?" to anticipate downstream consequences.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Select Mental Model**: Choose the lens best suited for the challenge (e.g., First Principles or Inversion).
+2. **Apply Framework Lens**:
+   - *First Principles*: Strip away assumptions; rebuild from fundamental facts.
+   - *Inversion*: List everything that causes failure; eliminate those conditions.
+   - *Second-Order*: Trace outcomes to 2nd and 3rd order impacts.
+3. **Synthesize Insights**: Deriving novel solutions unavailable from conventional thinking.
+
+## Expected Output Contract
+
+```markdown
+### Mental Model Application: [Model Name]
+- **Core Principle**: [Model Definition]
+- **Deconstruction**: [Step-by-step breakdown using the model]
+- **Key Insight**: [Actionable conclusion derived from the model]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively applies mental models without requiring external deterministic scripts.

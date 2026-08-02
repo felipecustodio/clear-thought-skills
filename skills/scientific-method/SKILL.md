@@ -1,30 +1,39 @@
 ---
 name: scientific-method
-description: Use this skill for scientific_method.
+description: Applies empirical inquiry through Observation, Hypothesis Formation, Experimentation, Analysis, and Conclusion.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for scientific method
-- You need to perform scientific_method
+The Scientific Method provides a rigorous framework for empirical investigation. It transforms speculative problem solving into structured hypothesis testing, ensuring that conclusions are grounded in verifiable evidence and reproducible reasoning.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/scientific_method.py` to validate or compute.
-3. Format the final output for the user.
+- **Root Cause Analysis**: Investigating unexplained bugs, performance regressions, or test failures.
+- **Empirical Validation**: Testing technical assumptions against experimental data or logs.
+- **Scientific & Research Tasks**: Systematic exploration of unknown phenomena or complex data sets.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Observation**: Record objective facts, error logs, or anomalous behavior without bias.
+2. **Hypothesis**: Formulate testable, falsifiable hypotheses explaining the observation.
+3. **Experiment Setup**: Design a controlled test to prove or disprove the primary hypothesis.
+4. **Data Collection & Analysis**: Execute the experiment, measure results, and compare against expectations.
+5. **Conclusion**: Accept, modify, or reject the hypothesis based strictly on evidence.
+
+## Expected Output Contract
+
+```markdown
+### Scientific Investigation
+- **Observation**: [Factual anomaly / error]
+- **Hypothesis**: [Falsifiable explanation]
+- **Experiment**: [Validation step]
+- **Results**: [Measured data]
+- **Conclusion**: [Confirmed / Rejected]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively structures scientific inquiry without requiring external deterministic scripts.

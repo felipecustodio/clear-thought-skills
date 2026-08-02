@@ -1,30 +1,40 @@
 ---
 name: decision-framework
-description: Use this skill for decision_framework.
+description: Evaluates choices systematically using multi-criteria decision analysis (MCDA), weighted scoring matrices, and risk profiles.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for decision framework
-- You need to perform decision_framework
+Decision Framework structures complex choices with multiple competing options and criteria. It eliminates subjective bias by using weighted decision matrices and risk-reward scoring.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/decision_framework.py` to validate or compute.
-3. Format the final output for the user.
+- **Technology Selection**: Choosing between frameworks, databases, or vendors.
+- **Strategic Prioritization**: Evaluating features, projects, or architectural directions.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Define Options**: List candidate choices ($O_1, O_2, \dots, O_m$).
+2. **Establish Criteria & Weights**: Define evaluation criteria ($C_1, C_2, \dots, C_n$) and assign weights ($\sum w_i = 1.0$).
+3. **Score Candidates**: Score each option on a 1-10 scale for each criterion.
+4. **Calculate Weighted Scores**: Total Score $= \sum (Score_{ij} \times w_j)$.
+5. **Recommendation**: Recommend the highest-scoring option with sensitivity analysis.
+
+## Expected Output Contract
+
+```markdown
+### Decision Matrix
+| Criterion (Weight) | Option A | Option B | Option C |
+| :--- | :--- | :--- | :--- |
+| Performance (0.4) | 8 (3.2) | 6 (2.4) | 9 (3.6) |
+| Cost (0.3) | 7 (2.1) | 9 (2.7) | 5 (1.5) |
+| **Total Score** | **5.3** | **5.1** | **5.1** |
+
+**Winning Choice**: Option A
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively constructs decision matrices without requiring external deterministic scripts.

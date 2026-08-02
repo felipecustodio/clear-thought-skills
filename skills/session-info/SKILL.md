@@ -1,30 +1,35 @@
 ---
 name: session-info
-description: Use this skill for session_info.
+description: Summarizes the current agent session metadata, active reasoning state, thought counts, and historical trajectory.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for session info
-- You need to perform session_info
+Session Info provides a meta-view of the active conversation's cognitive trajectory, tracking active memory states, completed thoughts, and overall progress.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/session_info.py` to validate or compute.
-3. Format the final output for the user.
+- **Progress Summarization**: Reporting session state during long-running tasks.
+- **Context Audit**: Verifying remaining thought budget or session parameters.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Inspect Active Context**: Count thoughts executed, active branches, and current skill state.
+2. **Synthesize History**: Summarize key milestones achieved in the current session.
+3. **Report Metadata**: Output structured session status.
+
+## Expected Output Contract
+
+```markdown
+### Session Status Report
+- **Session ID**: [Current ID / Active Context]
+- **Total Thoughts Executed**: [N]
+- **Active Skills**: [List of active skills]
+- **Current Milestone**: [Summary of progress]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively inspects session state without requiring external deterministic scripts.

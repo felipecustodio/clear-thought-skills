@@ -1,30 +1,40 @@
 ---
 name: code-execution-reasoning
-description: Use this skill for code-execution.
+description: Mental dry-run execution of code blocks, tracking variable states, call stacks, memory references, and iteration indices step by step.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for code execution reasoning
-- You need to perform code-execution
+Code Execution Reasoning performs a rigorous mental dry-run of code line by line. It tracks environment variables, heap/stack states, pointer mutations, and loop counters to detect off-by-one errors and race conditions.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/code_execution_reasoning.py` to validate or compute.
-3. Format the final output for the user.
+- **Code Review**: Auditing algorithmic code without running it directly.
+- **Static Bug Hunting**: Locating off-by-one errors, null pointers, or memory leaks.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Initialize State**: List input variables and their initial memory state.
+2. **Line-by-Line Execution Trace**:
+   - For each executed statement, record modified variables and current control flow line.
+3. **Loop & Condition Verification**: Verify loop invariants, boundary indices ($i=0, i=N-1$), and terminating conditions.
+4. **Return State Verification**: Confirm final returned payload matches requirements.
+
+## Expected Output Contract
+
+```markdown
+### Code Dry-Run Trace
+| Line | Code Statement | Variable States | Control Flow |
+| :--- | :--- | :--- | :--- |
+| L1 | `x = 5` | `{x: 5}` | Next L2 |
+| L2 | `x += 1` | `{x: 6}` | Next L3 |
+
+- **Final Returned Value**: [Result]
+- **Detected Issues**: [Boundary/State errors]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively traces code execution without requiring external deterministic scripts.

@@ -1,30 +1,39 @@
 ---
 name: analogical-reasoning
-description: Use this skill for analogical_reasoning.
+description: Transfers insights, principles, and structural patterns from a familiar source domain to an unfamiliar target domain.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for analogical reasoning
-- You need to perform analogical_reasoning
+Analogical Reasoning maps structural relationships from a well-understood source domain to solve novel problems in a target domain. It enables creative cross-domain problem solving and intuitive explanations.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/analogical_reasoning.py` to validate or compute.
-3. Format the final output for the user.
+- **Novel Problem Solving**: Applying proven architecture patterns (e.g., assembly line) to new fields (e.g., software CI/CD pipelines).
+- **Simplifying Complex Concepts**: Explaining abstract technical systems using intuitive real-world analogs.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Identify Target Domain**: Define the problem or concept that needs solving/explanation.
+2. **Select Source Domain**: Identify a familiar domain sharing deep structural similarities (not surface similarities).
+3. **Map Structural Relationships**: Align elements of Source $\to$ Target ($A \to X, B \to Y$).
+4. **Transfer Insights**: Apply known solutions from the source to generate hypotheses for the target.
+5. **Validate Limits**: Identify where the analogy breaks down to avoid false equivalences.
+
+## Expected Output Contract
+
+```markdown
+### Analogical Transfer
+- **Source Domain**: [Familiar System]
+- **Target Domain**: [Novel Problem]
+- **Structural Mapping**:
+  - `Source Concept A` -> `Target Concept X`
+- **Inferred Solution**: [Transferred Insight]
+- **Analogy Breakdown / Limitations**: [Where analogy fails]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively performs analogical mapping without requiring external deterministic scripts.

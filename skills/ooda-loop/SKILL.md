@@ -1,30 +1,48 @@
 ---
 name: ooda-loop
-description: Use this skill for ooda-loop.
+description: Applies the Observe-Orient-Decide-Act (OODA) loop for rapid adaptive decision making in fast-changing or volatile environments.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for ooda loop
-- You need to perform ooda-loop
+The OODA Loop (Observe, Orient, Decide, Act) is an iterative strategy framework developed by John Boyd. It emphasizes agility, rapid adaptation, and mental orientation updating when operating under dynamic, changing, or competitive conditions.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/ooda_loop.py` to validate or compute.
-3. Format the final output for the user.
+- **Rapidly Changing Environments**: Incident response, live debugging, real-time strategy adjustment.
+- **Adaptive Execution**: When new information arrives continuously and invalidates old assumptions quickly.
+- **Competitive & Adversarial Contexts**: Outmaneuvering fast-paced constraints or dynamic operational challenges.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Observe**:
+   - Gather fresh raw data, current state indicators, logs, or system responses. Avoid premature interpretation.
+
+2. **Orient**:
+   - Contextualize data using existing mental models, past experience, and domain knowledge.
+   - Update your internal situational model. Identify biases or outdated assumptions.
+
+3. **Decide**:
+   - Formulate a clear hypothesis or select the single best immediate action from available alternatives.
+
+4. **Act**:
+   - Execute the action rapidly to test the hypothesis or stabilize the environment.
+
+5. **Loop**:
+   - Immediately observe the outcome of the action and repeat the cycle.
+
+## Expected Output Contract
+
+```markdown
+### OODA Loop Iteration
+- **Observe**: [Fresh data & observations]
+- **Orient**: [Updated mental model & context analysis]
+- **Decide**: [Selected immediate action]
+- **Act**: [Execution step & expected feedback]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively tracks OODA loop cycles without requiring external deterministic scripts.

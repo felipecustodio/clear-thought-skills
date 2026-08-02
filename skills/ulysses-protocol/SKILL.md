@@ -1,30 +1,44 @@
 ---
 name: ulysses-protocol
-description: Use this skill for ulysses-protocol.
+description: Applies pre-commitment mechanisms and strict constraint bounds (Ulysses Contracts) to prevent self-sabotage, scope creep, or decision paralysis.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for ulysses protocol
-- You need to perform ulysses-protocol
+The Ulysses Protocol enforces pre-commitment mechanisms (named after Ulysses tying himself to the mast to resist the Sirens). It is used to lock in boundaries, execution limits, and strict stopping rules before engaging in tasks prone to scope creep, endless loops, or over-engineering.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/ulysses_protocol.py` to validate or compute.
-3. Format the final output for the user.
+- **Preventing Scope Creep**: When a task threatens to expand uncontrollably beyond initial requirements.
+- **Setting Hard Execution Limits**: Time-boxing, iteration caps, or strict resource limits on open-ended tasks.
+- **Resisting Temptation / Over-engineering**: Ensuring simple solutions are chosen over needlessly complex ones.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Define Hard Constraints (The Lock)**:
+   - Establish non-negotiable boundaries before starting (e.g., "Max 3 iterations", "No refactoring outside target file", "Must complete within 100 lines").
+
+2. **Identify Trigger Conditions (The Sirens)**:
+   - List potential distractions or temptations that could cause scope creep during execution.
+
+3. **Pre-Commit Action (Tying to the Mast)**:
+   - Agree on automatic fallback actions if a constraint threshold is reached (e.g., "If step 3 fails twice, revert to baseline implementation").
+
+4. **Execute & Enforce**:
+   - Proceed with execution, strictly adhering to pre-commitments without exception.
+
+## Expected Output Contract
+
+```markdown
+### Ulysses Protocol Commitment
+- **Hard Boundaries**: [Max steps / scope limits]
+- **Temptation Vectors**: [Known scope creep risks]
+- **Pre-Committed Rule**: [Automatic stopping / fallback rule]
+- **Execution Status**: [Compliant / Boundary Enforced]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively enforces Ulysses constraints without requiring external deterministic scripts.

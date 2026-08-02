@@ -1,30 +1,36 @@
 ---
 name: simulation-reasoning
-description: Use this skill for simulation.
+description: Simulates complex system behaviors over time under varying initial conditions or agent interactions.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for simulation reasoning
-- You need to perform simulation
+Simulation Reasoning conducts step-by-step dynamic modeling of complex systems to observe emergent behavior, identify tipping points, and evaluate long-term outcomes under synthetic conditions.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/simulation_reasoning.py` to validate or compute.
-3. Format the final output for the user.
+- **Complex Dynamic Systems**: Queueing systems, load behavior under traffic bursts, concurrency race conditions.
+- **Scenario Planning**: Simulating multi-agent market conditions, adoption curves, or failure cascades.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Define State Variables & Rules**: Establish system entities, parameters, and transition rules.
+2. **Initialize Simulation**: Set initial seed conditions and time-step size ($\Delta t$).
+3. **Step Through Epochs**: Execute state transitions iteratively over $N$ time steps.
+4. **Analyze Emergent Patterns**: Identify bottlenecks, steady states, or catastrophic failure modes.
+
+## Expected Output Contract
+
+```markdown
+### Simulation Results
+- **Initial Conditions**: [Seed Parameters]
+- **Execution Horizon**: [N Time Steps]
+- **Key Metrics over Time**: [Summary Table / Stats]
+- **Emergent Insights**: [System Behavior Analysis]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively models simulation steps without requiring external deterministic scripts.

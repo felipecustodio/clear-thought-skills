@@ -1,30 +1,41 @@
 ---
 name: socratic-method
-description: Use this skill for socratic_method.
+description: Uses disciplined, probing questions to uncover underlying assumptions, test reasoning logic, and guide conceptual understanding.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for socratic method
-- You need to perform socratic_method
+The Socratic Method employs targeted questioning to challenge assumptions, clarify concepts, and guide users or reasoning processes toward deeper self-correction.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/socratic_method.py` to validate or compute.
-3. Format the final output for the user.
+- **Clarifying Requirements**: Uncovering hidden assumptions or ambiguous requests from users.
+- **Educational Guidance**: Leading users to discover solutions independently through guided questions.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Identify Premise**: State the user's initial assertion or assumption.
+2. **Formulate Probing Questions**:
+   - *Conceptual Clarification*: "What exactly do we mean by X?"
+   - *Probing Assumptions*: "What are we assuming here?"
+   - *Probing Evidence*: "What evidence supports this?"
+   - *Alternative Perspectives*: "What is the counter-argument?"
+   - *Exploring Consequences*: "If this is true, what follows?"
+3. **Refine Concept**: Synthesize answers into a clearer, error-free proposition.
+
+## Expected Output Contract
+
+```markdown
+### Socratic Dialog / Probe
+- **Target Premise**: [Initial Statement]
+- **Probing Questions**:
+  1. [Clarification question]
+  2. [Assumption challenge]
+- **Refined Understanding**: [Deeper Conclusion]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively executes Socratic probing without requiring external deterministic scripts.

@@ -1,30 +1,36 @@
 ---
 name: ethical-analysis
-description: Use this skill for ethical_analysis.
+description: Evaluates decisions through major ethical frameworks (Utilitarianism, Deontology, Virtue Ethics, Rights-Based Ethics).
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for ethical analysis
-- You need to perform ethical_analysis
+Ethical Analysis evaluates actions and technical implementations for moral compliance, fairness, user privacy, and societal impact using established philosophical ethical frameworks.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/ethical_analysis.py` to validate or compute.
-3. Format the final output for the user.
+- **Data Privacy & AI Governance**: Evaluating data usage, user tracking, or AI model safety.
+- **Policy & System Safety**: Assessing impact of automated actions on users, accessibility, and fairness.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Utilitarian Assessment**: Evaluate consequences — which action maximizes net benefit for the greatest number?
+2. **Deontological Assessment**: Evaluate duties & rules — does the action violate core moral rules, consent, or laws regardless of outcome?
+3. **Rights & Fairness Assessment**: Does the decision treat individuals equitably and respect fundamental rights?
+4. **Synthesis & Mitigation**: Formulate a resolution balancing ethical duties and maximizing positive outcomes.
+
+## Expected Output Contract
+
+```markdown
+### Ethical Evaluation
+- **Utilitarian Perspective**: [Consequence Analysis]
+- **Deontological Perspective**: [Duty & Rules Analysis]
+- **Fairness & Rights**: [Rights & Equity Assessment]
+- **Ethical Recommendation**: [Balanced Ethical Recommendation]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively performs ethical evaluations without requiring external deterministic scripts.

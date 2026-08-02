@@ -1,30 +1,35 @@
 ---
 name: orchestration-suggest
-description: Use this skill for orchestration-suggest.
+description: Recommends the optimal reasoning pattern or sequence of skills based on task complexity, constraints, and domain.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for orchestration suggest
-- You need to perform orchestration-suggest
+Orchestration Suggest acts as a meta-cognitive router, analyzing a user prompt and recommending which specific reasoning skills or workflows should be chained together for optimal problem solving.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/orchestration_suggest.py` to validate or compute.
-3. Format the final output for the user.
+- **Complex Unstructured Prompts**: When it is unclear which thinking framework is best suited.
+- **Workflow Planning**: Designing multi-stage agent execution chains.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Analyze Task Attributes**: Evaluate complexity, domain, certainty, and constraint rigidity.
+2. **Match Reasoning Patterns**: Select candidate frameworks (e.g., `sequential-thinking`, `pdr-reasoning`, `tree-of-thought`).
+3. **Construct Execution Sequence**: Order selected patterns into a coherent workflow pipeline.
+4. **Provide Rationale**: Explain why the chosen sequence fits the task profile.
+
+## Expected Output Contract
+
+```markdown
+### Recommended Orchestration Pipeline
+1. `Step 1: [Skill Name]` - [Rationale]
+2. `Step 2: [Skill Name]` - [Rationale]
+- **Estimated Complexity**: [Low / Medium / High]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively executes orchestration routing without requiring external deterministic scripts.

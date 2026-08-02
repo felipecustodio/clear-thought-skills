@@ -1,30 +1,35 @@
 ---
 name: visual-dashboard
-description: Use this skill for visual_dashboard.
+description: Generates interactive HTML/CSS/JS dashboards and metrics panels for complex data visualization.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for visual dashboard
-- You need to perform visual_dashboard
+Visual Dashboard renders rich, interactive HTML dashboards containing metrics panels, Charts, and responsive layouts to visually present complex analysis.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/visual_dashboard.py` to validate or compute.
-3. Format the final output for the user.
+- **Data Reporting**: Displaying multi-metric performance reports or telemetry data.
+- **Executive Summaries**: Creating visually engaging dashboard UI artifacts.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Define Layout & Panels**: Design grid/flex layout and identify metric panels.
+2. **Construct HTML/CSS/JS Payload**: Build responsive HTML containing CSS styles and Chart.js script definitions.
+3. **Output Dashboard Artifact**: Present clean HTML artifact for rendering.
+
+## Expected Output Contract
+
+```markdown
+### Generated Visual Dashboard
+- **Title**: [Dashboard Title]
+- **Layout**: [Grid / Flex]
+- **Panels Rendered**: [List of Panels]
+- **HTML Payload**: [Rendered HTML block]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively constructs HTML/CSS dashboard layouts without requiring external deterministic scripts.

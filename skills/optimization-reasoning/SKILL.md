@@ -1,30 +1,36 @@
 ---
 name: optimization-reasoning
-description: Use this skill for optimization.
+description: Formulates problems as mathematical or logical optimization models with explicit objective functions and constraints.
 license: MIT
 compatibility: Requires Python 3.12+ and uv when running bundled scripts.
 ---
 
-## Use When
+## Overview & Purpose
 
-- The user asks for optimization reasoning
-- You need to perform optimization
+Optimization Reasoning identifies the mathematically or logically best solution from a set of available alternatives subject to defined constraints. It turns vague trade-offs into formal objective functions.
 
-## Workflow
+## When to Use
 
-1. Determine the parameters for the task.
-2. Execute the necessary steps.
-3. Run the script `scripts/optimization_reasoning.py` to validate or compute.
-3. Format the final output for the user.
+- **Resource Allocation**: Budgeting, memory allocation, thread pool sizing, scheduling.
+- **Trade-off Analysis**: Maximizing performance while minimizing cost or latency constraints.
 
-## Outputs
+## Execution Workflow
 
-- A formatted response with reasoning and conclusions.
+1. **Identify Decision Variables**: Define the tunable variables ($x_1, x_2, \dots, x_n$).
+2. **Formulate Objective Function**: State the goal explicitly (e.g., $\max f(x)$ or $\min g(x)$).
+3. **Define Hard Constraints**: List non-negotiable boundaries (e.g., $h_i(x) \le C$).
+4. **Evaluate Feasible Region**: Find the optimal combination of variables satisfying all constraints.
+
+## Expected Output Contract
+
+```markdown
+### Optimization Model
+- **Objective**: [Maximize / Minimize Statement]
+- **Variables**: [List of decision variables]
+- **Constraints**: [Hard limits]
+- **Optimal Solution**: [Recommended Configuration]
+```
 
 ## Scripts
 
-Python support omitted: Agent context window natively tracks this state without requiring external deterministic scripts.
-
-## Gotchas
-
-- Ensure all required parameters are provided.
+Python support omitted: Agent context window natively formulates optimization problems without requiring external deterministic scripts.
