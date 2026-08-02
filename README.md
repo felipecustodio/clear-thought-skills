@@ -1,5 +1,10 @@
 # clear-thought-skills
 
+[![CI](https://github.com/felipecustodio/clear-thought-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/felipecustodio/clear-thought-skills/actions/workflows/ci.yml)
+[![Skills](https://img.shields.io/badge/skills-42-blue.svg)](skills/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+
 > Clear Thought MCP, rewritten as modular Agent Skills.
 
 This repository converts the reasoning engines from [Waldzell AI's Clear Thought 1.5 MCP Server](https://github.com/waldzellai/clearthought-onepointfive) into clean, standalone Agent Skills following the [agentskills.io](https://agentskills.io) specification.
