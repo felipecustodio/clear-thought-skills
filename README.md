@@ -8,6 +8,22 @@ This repository converts the reasoning engines from [Waldzell AI's Clear Thought
 
 ---
 
+## Installation
+
+Install all skills into your agent environment using `npx skills`:
+
+```bash
+npx skills add felipecustodio/clear-thought-skills
+```
+
+To install a specific skill (e.g. `sequential-thinking`):
+
+```bash
+npx skills add felipecustodio/clear-thought-skills/skills/sequential-thinking
+```
+
+---
+
 ## Aim
 
 To turn monolithic Model Context Protocol (MCP) servers into lightweight, composable Agent Skills:
