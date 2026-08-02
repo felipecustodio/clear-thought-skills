@@ -72,6 +72,10 @@ just validate-skills
 | [session-info](skills/session-info/SKILL.md) | Summarizes the current agent session metadata, active reasoning state, thought counts, and historical trajectory. | **Progress Summarization**: Reporting session state during long-running tasks.; **Context Audit**: Verifying remaining thought budget or session parameters. |
 | [simulation-reasoning](skills/simulation-reasoning/SKILL.md) | Simulates complex system behaviors over time under varying initial conditions or agent interactions. | **Complex Dynamic Systems**: Queueing systems, load behavior under traffic bursts, concurrency race conditions.; **Scenario Planning**: Simulating multi-agent market conditions, adoption curves, or failure cascades. |
 | [socratic-method](skills/socratic-method/SKILL.md) | Uses disciplined, probing questions to uncover underlying assumptions, test reasoning logic, and guide conceptual understanding. | **Clarifying Requirements**: Uncovering hidden assumptions or ambiguous requests from users.; **Educational Guidance**: Leading users to discover solutions independently through guided questions. |
+| [starter-architecture-design](skills/starter-architecture-design/SKILL.md) | Starter skill for end-to-end software architecture design. Orchestrates requirement probing, systems analysis, tree-of-thought exploration, boundary setting, and visual diagramming. | General reasoning and problem solving. |
+| [starter-code-debugging](skills/starter-code-debugging/SKILL.md) | Starter skill for systematic software debugging and bug resolution. Orchestrates error isolation, code dry-runs, sequential thinking, and regression prevention. | General reasoning and problem solving. |
+| [starter-root-cause-investigation](skills/starter-root-cause-investigation/SKILL.md) | Starter skill for incident post-mortems and deep scientific investigations. Orchestrates 5-Whys causal analysis, empirical hypothesis testing, and simulation modeling. | General reasoning and problem solving. |
+| [starter-strategic-decision](skills/starter-strategic-decision/SKILL.md) | Starter skill for multi-criteria strategic decision making, tech stack selection, and vendor evaluation. Orchestrates decision matrices, probability modeling, ethical checks, and panel reviews. | General reasoning and problem solving. |
 | [statistical-reasoning](skills/statistical-reasoning/SKILL.md) | Applies statistical thinking, probability estimation, confidence intervals, and Bayesian updating to quantitative data. | **Data Interpretation**: Analyzing benchmark results, metric changes, or experiment outcomes.; **Bayesian Inference**: Updating prior beliefs when new quantitative evidence arrives. |
 | [structured-argumentation](skills/structured-argumentation/SKILL.md) | Constructs formal logical arguments using Claim, Data, Warrant, Backing, Counter-argument, and Rebuttal (Toulmin Model). | **RFCs & Technical Proposals**: Pitching new architecture or technology adoption.; **Debate & Position Papers**: Defending strategic technical choices against skepticism. |
 | [systems-thinking](skills/systems-thinking/SKILL.md) | Analyzes complex systems by examining feedback loops, delays, leverage points, and holistic interconnections. | **Complex System Architecture**: Distributed systems, microservices, organizational dynamics.; **Unintended Consequences**: Preventing fixes that create bigger downstream problems. |
@@ -79,58 +83,6 @@ just validate-skills
 | [ulysses-protocol](skills/ulysses-protocol/SKILL.md) | Applies pre-commitment mechanisms and strict constraint bounds (Ulysses Contracts) to prevent self-sabotage, scope creep, or decision paralysis. | **Preventing Scope Creep**: When a task threatens to expand uncontrollably beyond initial requirements.; **Setting Hard Execution Limits**: Time-boxing, iteration caps, or strict resource limits on open-ended tasks. |
 | [visual-dashboard](skills/visual-dashboard/SKILL.md) | Generates interactive HTML/CSS/JS dashboards and metrics panels for complex data visualization. | **Data Reporting**: Displaying multi-metric performance reports or telemetry data.; **Executive Summaries**: Creating visually engaging dashboard UI artifacts. |
 | [visual-reasoning](skills/visual-reasoning/SKILL.md) | Uses visual diagrams (Mermaid, ASCII, UI mockups) to model spatial, architectural, and flow relationships. | **Architecture Documentation**: Drawing flowcharts, sequence diagrams, or component diagrams.; **Workflow Visualization**: Clarifying complex state machines or process branches. |
-
-## § Agentic Workflows & Usage Guide
-
-### 1. Planning Phase Workflows
-
-#### Pattern A: High-Uncertainty Architecture Planning
-```mermaid
-graph LR
-    A[orchestration-suggest] --> B[socratic-method]
-    B --> C[tree-of-thought]
-    C --> D[ulysses-protocol]
-```
-1. **`orchestration-suggest`**: Analyze prompt complexity and recommend reasoning sequence.
-2. **`socratic-method`**: Probe requirements to uncover hidden assumptions and clarify edge constraints.
-3. **`tree-of-thought`**: Explore competing architectural patterns (e.g. Microservices vs Monolith) with heuristic branch scoring.
-4. **`ulysses-protocol`**: Establish strict stopping rules and scope boundaries before writing code.
-
----
-
-### 2. Development & Debugging Workflows
-
-#### Pattern B: Complex Refactoring & Implementation
-```mermaid
-graph LR
-    A[sequential-thinking] --> B[code-execution-reasoning] --> C[debugging-approach]
-```
-1. **`sequential-thinking`**: Execute step-by-step logic, allowing dynamic thought revisions.
-2. **`code-execution-reasoning`**: Perform mental dry-runs of memory state, loop invariants, and pointer safety.
-3. **`debugging-approach`**: If errors occur, isolate the failure via binary search and root-cause verification.
-
----
-
-### 3. Review & Red-Teaming Workflows
-
-#### Pattern C: System Hardening & Safety Audit
-```mermaid
-graph LR
-    A[systems-thinking] --> B[pdr-reasoning] --> C[collaborative-reasoning] --> D[visual-reasoning]
-```
-1. **`systems-thinking`**: Map system feedback loops, delays, and bottleneck leverage points.
-2. **`pdr-reasoning`**: Predict failure modes and actively disrupt/red-team the design.
-3. **`collaborative-reasoning`**: Evaluate outcomes across Security, Performance, and Product personas.
-4. **`visual-reasoning`**: Render final architecture and sequence flowcharts using Mermaid diagrams.
-
----
-
-## § Best Practices for Maximum Effectiveness
-
-- **Skill Chaining**: Pass the output contract of one skill directly into the input context of the next skill.
-- **Context Preservation**: Use `session-export` and `session-import` to serialize cognitive state when handing off tasks between agents or subagent tasks.
-- **Strict Boundary Enforcement**: Combine open-ended skills (like `creative-thinking`) with boundary enforcement skills (`ulysses-protocol`) to avoid endless iteration loops.
-- **Deterministic Verification**: Whenever a skill provides a bundled Python script in `scripts/`, invoke it using `uv run scripts/<script_name>.py` to obtain reproducible JSON outputs.
 
 ## § Status
 

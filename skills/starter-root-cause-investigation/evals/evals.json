@@ -1,0 +1,25 @@
+{
+  "skill_name": "starter-root-cause-investigation",
+  "evals": [
+    {
+      "id": "eval-1",
+      "prompt": "Execute starter-root-cause-investigation for a sample scenario.",
+      "expected_output": "A structured multi-phase reasoning response.",
+      "assertions": [
+        "contains_phases",
+        "provides_synthesis"
+      ],
+      "files": []
+    },
+    {
+      "id": "eval-2",
+      "prompt": "Run starter-root-cause-investigation on an edge case requirement.",
+      "expected_output": "A hardened solution addressing edge constraints.",
+      "assertions": [
+        "evaluates_constraints",
+        "recommends_action"
+      ],
+      "files": []
+    }
+  ]
+}
